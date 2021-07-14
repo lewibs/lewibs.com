@@ -1,0 +1,27 @@
+#nav {
+    z-index: 100;
+}
+
+#nav .btn {
+    display: inline-block;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 11px 23px;
+    border: 1px solid #7a7a7a;
+    text-decoration: none;
+}
+
+#navHome {
+    display: inline-block;
+}
+
+#navButtons {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+}
+
+#navLogo {
+    display: inline-block;
+}

@@ -1,0 +1,397 @@
+﻿/*general styles*/
+.color1 {
+    color: #ebebeb;
+    background-color: #888;
+}
+
+.color1:link {
+    color: #ebebeb;
+    text-decoration:none;
+}
+
+.color1 .button:hover {
+    background-color: #7a7a7a;
+}
+
+.color2 {
+    background-color: #ebebeb;
+    border: #00a2e8;
+}
+
+.color2 h1, .color2 h3, .color2 h5 {
+    color: black;
+}
+
+.color2 h2, .color2 h4, .color2 h6 {
+    color: #787878;
+}
+
+.color2 .button {
+    color: white;
+    background-color: black;
+}
+
+.color3 {
+    background-color: #dcdcdc;
+}
+
+.color3 h4 {
+    color: #787878;
+}
+
+.color3 a {
+    color: #787878;
+    text-decoration:none;
+}
+
+#skills .header, #projects .header {
+    font-size: 2em;
+    text-align: center;
+    margin: 50px;
+}
+
+
+/* this is required so that the sections can fill the whole screen*/
+html, body, main {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    font-family: Monaco, Arial, sans-serif;
+}
+
+
+
+/*this is all the home screen stuff*/
+#home {
+    width: 100%;
+    height: 100%;
+}
+
+#lewibs {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/room.jpg');
+    background-size: 100% 100%;
+}
+
+#lewibs h1 {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#lewibs h1 span {
+    position: relative;
+    text-transform: uppercase;
+    text-shadow: -15px 5px 15px #bdbdbd;
+    color: #fbfbfb;
+    letter-spacing: -0.25em;
+    font-family: Verdana, Arial, sans-serif;
+    text-transform: uppercase;
+    transition: text-shadow 1.5s ease-out;
+    transition-delay: 0.25s;
+    font-weight: 800;
+    font-size: 7vw;
+}
+
+/*This is all the about me stuff*/
+#aboutMe {
+    padding: 70px;
+}
+
+#aboutMe .grid {
+    position: relative;
+    display: grid;
+    grid-template-areas: 'header header image' 'body body image' 'resume resume image';
+    width: 800px;
+    margin: auto;
+    z-index: 1;
+    /*border: 5px solid #00a2e8;*/
+}
+
+
+/***YEA IM PROUD OF THAT***/
+#aboutMe .grid::before {
+    content: "";
+    display: block;
+    position:absolute;
+    width: 105%;
+    height: 100%;
+    background-color: #00a2e8;
+    transform: skewY(-13deg) rotate(8deg) translate(-2%, 0%);
+    z-index: -1;
+}
+
+#aboutMe .grid::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ebebeb;
+    z-index: 0;
+}
+
+#aboutMe .gridItem {
+    padding-left:15px;
+}
+
+#aboutMe .image {
+    grid-area: image;
+    text-align: center;
+    transform: translate(0px, -30px);
+    margin-bottom: -35px;
+    height: 350px;
+    z-index:1;
+}
+
+#aboutMe .image img {
+    max-height: 100%;
+}
+
+#aboutMe .header {
+    grid-area: header;
+    text-align: left;
+    margin-bottom:-30px;
+    z-index: 1;
+}
+
+#aboutMe .body {
+    grid-area: body;
+    text-align: left;
+    z-index: 1;
+}
+
+#aboutMe .resume {
+    grid-area: resume;
+    text-align:left;
+    z-index: 1;
+}
+
+#aboutMe .resume .button {
+    display: inline-block;
+    cursor: pointer;
+    padding: 9px 23px;
+    text-decoration: none;
+}
+
+
+
+/***************************skill section************************************/
+#skills .background {
+    width: 100%;
+    height: 2477px;
+    position: absolute;
+}
+
+#skills .mainContainer {
+    position: relative;
+    margin: auto;
+    max-width: 69%;
+    min-width: 900px;
+    padding: 40px;
+}
+
+#skills .container {
+    padding-bottom:30px;
+}
+
+#skills article {
+    position: relative;
+    display: grid;
+    grid-template-areas: 'name info info' 'date discription description' 'empty links links';
+    grid-auto-columns:30% 70%;
+}
+
+#skills article .name {
+    grid-area:name;
+}
+
+#skills article .date {
+    grid-area: date;
+}
+
+#skills article .discription {
+    grid-area: discription;
+}
+
+#skills article .links {
+    grid-area: links;
+}
+
+#skills article .info {
+    grid-area: info;
+}
+
+#skills .container h1 {
+    text-align: left;
+    padding: 25px;
+    color: black;
+    border-bottom: 1px solid #787878;
+}
+
+.skills, .career, .school {
+    padding: 0px 20px 0px 20px;
+    margin: 100px;
+}
+
+.skills {
+    background-color:transparent;
+}
+
+#skills .containerItem {
+    padding:30px 0px 30px 0px;
+}
+
+#skills table td {
+    text-align:center;
+    padding: 20px;
+}
+
+#skills .skills table {
+    width:200px;
+    margin: auto;
+    text-align: center;
+}
+
+/******************************This is for the projects section*********************************/
+#projects .mainContainer {
+    position: relative;
+    margin: auto;
+    width:810px;
+    padding: 40px;
+}
+
+#projects .project {
+    width: 400px;
+    height: 400px;
+}
+
+#projects .project img {
+    width: 400px;
+    height: 400px;
+}
+
+#projects h2 {
+    text-align: left;
+    padding: 25px;
+    border-bottom: 1px solid #787878;
+}
+
+
+/************This is for the contact section********************/
+
+#contact .grid {
+    display: grid;
+    grid-template-areas: 'nothin quote quote nothing' 'media media contact contact';
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    height: 300px;
+    border-bottom: 1px solid #ebebeb;
+    padding-top: 50px;
+}
+
+#contact .gridItem {
+    padding:20px;
+}
+
+#contact .quote {
+    grid-area: quote;
+}
+
+#contact .media {
+    grid-area: media;
+}
+
+#contact .media strong {
+    font-size:35px;
+}
+
+#contact .contact {
+    grid-area: contact;
+    text-align:right;
+}
+
+#contact .fa {
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    color: #0086bf;
+    background-color: #ebebeb;
+    border-radius: 5px;
+}
+
+#contact #bye {
+    text-align:center;
+    padding:40px;
+}
+
+/*********navbar STUFF*******/
+#navBar {
+    z-index:100;
+}
+
+#navBar .button {
+    display: inline-block;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 11px 23px;
+    border: 1px solid #7a7a7a;
+    text-decoration: none;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+.sticky + main {
+    padding-top: 46px;
+}
+
+#navHome {
+    display: inline-block;
+}
+
+#navButtons {
+    display: inline-block;
+    position:absolute;
+    right:0px;
+}
+
+#headerLogo {
+    display:inline-block;
+}
+
+
+
+
+
+
+/*this is thescrollbar*/
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
