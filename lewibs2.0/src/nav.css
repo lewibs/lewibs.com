@@ -1,27 +1,20 @@
-#nav {
-    z-index: 100;
+#nav #navButtons{
+    position:absolute;
+    right:0px;
 }
 
-#nav .btn {
-    display: inline-block;
-    font-family: Verdana, Arial, sans-serif;
-    font-size: 15px;
-    font-weight: bold;
-    padding: 11px 23px;
-    border: 1px solid #7a7a7a;
-    text-decoration: none;
+#nav #navLogo {
+    margin-left:10px;
 }
 
-#navHome {
-    display: inline-block;
+@media (max-width:1020px) {
+    #navLogo {
+        display: none;
+    }
 }
 
-#navButtons {
-    display: inline-block;
-    position: absolute;
-    right: 0px;
-}
-
-#navLogo {
-    display: inline-block;
+@media (max-width:675px) {
+    #nav {
+        display:none;
+    }
 }

@@ -1,21 +1,22 @@
 import './nav.css';
+import Button from './Button'
 
 function Nav() {
 
     return (
         <nav id="nav">
-            <div id="navHome">
-                <a className="btn" href="#home">lewibs</a>
-            </div>
-            <div id="navLogo">
+            <span id="navHome">
+                <Button text='lewibs' href='#home' />
+            </span>
+            <span id="navLogo">
                 At the end of the day whoever has the longest wikipedia wins.
-        </div>
-            <div id="navButtons">
-                <a className="btn" href="#aboutMe">About Me</a>
+            </span>
+            <span id="navButtons">
+                <Button text='About Me' href='#aboutMe' />
                 <a className="btn" href="#skills">Skills & Experience</a>
                 <a className="btn" href="#projects">Projects</a>
                 <a className="btn" href="#contact">Contact</a>
-            </div>
+            </span>
         </nav>
     );
 }

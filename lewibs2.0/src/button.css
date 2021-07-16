@@ -1,0 +1,7 @@
+.btn {
+    display: inline-block;
+    font-weight: bold;
+    padding: 11px 23px;
+    border: 1px solid #7a7a7a;
+    text-decoration: none;
+}
