@@ -1,0 +1,39 @@
+#aboutMe {
+    position:relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width:60%;
+    margin:auto;
+    padding:50px;
+}
+
+#aboutMe img {
+    height:300px;
+}
+
+#aboutMe .grid {
+    display: grid;
+    grid-template-areas: 'greeting greeting image' 'slogan slogan image' 'about about image' 'resume resume image';
+}
+
+
+#aboutMe img {
+    grid-area: image;
+}
+
+#aboutMe h1 {
+    grid-area: greeting;
+}
+
+#aboutMe h4 {
+    grid-area:slogan;
+}
+
+#aboutMe .resume {
+    grid-area:resume;
+}
+
+#aboutMe .about {
+    grid-area: about;
+}

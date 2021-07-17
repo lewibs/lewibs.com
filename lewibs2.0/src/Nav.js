@@ -13,9 +13,9 @@ function Nav() {
             </span>
             <span id="navButtons">
                 <Button text='About Me' href='#aboutMe' />
-                <a className="btn" href="#skills">Skills & Experience</a>
-                <a className="btn" href="#projects">Projects</a>
-                <a className="btn" href="#contact">Contact</a>
+                <Button text='Skills & Experience' href='#skills' />
+                <Button text='Projects' href='#projects' />
+                <Button text='Contact' href='#contact' />
             </span>
         </nav>
     );
