@@ -1,3 +1,4 @@
+/*
 import $ from 'jquery';
 
 var darken = function () {
@@ -35,3 +36,6 @@ var lighten = function () {
 
 	$(this).css('background-color', rgb);
 }
+
+
+*/

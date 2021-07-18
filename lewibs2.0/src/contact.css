@@ -1,0 +1,35 @@
+#contact {
+    text-align: center;
+    margin: 30px auto;
+    max-width: 800px;
+    min-width: 170px;
+    width: 80%;
+}
+
+#contact .grid {
+    display: grid;
+    grid-template-areas: 'quote quote' 'media contact';
+    text-align:center;
+}
+
+#contact .quote {
+    grid-area:quote;
+}
+
+#contact .media {
+    grid-area:media;
+    text-align:left;
+}
+
+#contact .contact {
+    grid-area:contact;
+    text-align:right;
+}
+
+#contact .gridItem {
+    margin:10px;
+}
+
+#bye {
+    margin:30px;
+}

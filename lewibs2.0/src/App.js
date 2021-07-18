@@ -1,23 +1,21 @@
 import Nav from './Nav';
 import Home from './Home';
 import About from './About';
-import Sae from './Sae';
 import Projects from './Projects';
 import Contact from './Contact';
+import Background from './Background';
 
 function App() {
     return (
         <div>
-        <Nav />
-
+            <Background />
+            <Home />
+            <Nav />
             <main>
-                <Home />
                 <About />
-                <Sae />
                 <Projects />
+                <Contact />
             </main>
-
-            <Contact />
         </div>
     );
 }

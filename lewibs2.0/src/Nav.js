@@ -9,12 +9,10 @@ function Nav() {
                 <Button text='lewibs' href='#home' />
             </span>
             <span id="navLogo">
-                At the end of the day whoever has the longest wikipedia wins.
+                At the end of the day whoever has the longest Wikipedia wins.
             </span>
             <span id="navButtons">
                 <Button text='About Me' href='#aboutMe' />
-                <Button text='Skills & Experience' href='#skills' />
-                <Button text='Projects' href='#projects' />
                 <Button text='Contact' href='#contact' />
             </span>
         </nav>
