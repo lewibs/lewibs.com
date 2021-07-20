@@ -11,7 +11,7 @@ function Contact() {
                 <div className="media gridItem">
                     <strong>LEWIBS</strong>
                     <br />
-                    <a href="#" className="fa fa-instagram" ></a>
+                    <a href="#" className="fa fa-instagram"></a>
                     <a href="#" className="fa fa-spotify"></a>
                     <a href="#" className="fa fa-github"></a>
                 </div>

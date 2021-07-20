@@ -20,7 +20,7 @@ function Skills() {
             <span className='skill'>
                 <i className="fa fa-pencil"></i>
                 <h4>Manufacturing</h4>
-                <div>Solidworks, Electrical, Carpentry, Masonry</div>
+                <div>Solidworks, Landscaping, Hardscaping, Handyman</div>
             </span>
         </section>  
     );

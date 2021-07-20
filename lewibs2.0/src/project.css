@@ -1,0 +1,46 @@
+.project {
+    display: grid;
+    grid-template-areas: 'img info';
+    max-width:700px;
+    background:grey;
+    margin:10px;
+}
+
+.project img {
+    grid-area:img;
+}
+
+.project .info {
+    height: 100%;
+    display: grid;
+    grid-area: info;
+    text-align: left;
+    grid-template-areas: 'header' 'line' 'info' 'buttons'
+}
+
+.project h3 {
+    grid-area:header;
+}
+
+.project hr {
+    grid-area: line;
+    height:0px;
+}
+
+.project article {
+    grid-area: info;
+}
+
+.project .buttons {
+    grid-area: buttons;
+}
+
+
+.project .majorGridItem{
+    margin:10px;
+}
+
+.project .minorGridItem {
+    margin: 10px;
+}
+
