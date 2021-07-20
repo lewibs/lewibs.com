@@ -5,7 +5,7 @@ function Contact() {
         <footer id='contact'>
             <div className="grid">
                 <div className="quote gridItem">
-                    <h1>"It is possible to commit no mistakes and still lose. That is not weakness, that is life."</h1>
+                    <h2>"It is possible to commit no mistakes and still lose. That is not weakness, that is life."</h2>
                     <h4>- Jean-Luc Picard</h4>
                 </div>
                 <div className="media gridItem">

@@ -4,6 +4,7 @@ import About from './About';
 import Projects from './Projects';
 import Contact from './Contact';
 import Background from './Background';
+import Skills from './Skills';
 
 function App() {
     return (
@@ -13,6 +14,7 @@ function App() {
             <Nav />
             <main>
                 <About />
+                <Skills />
                 <Projects />
                 <Contact />
             </main>

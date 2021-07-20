@@ -13,6 +13,8 @@ function Nav() {
             </span>
             <span id="navButtons">
                 <Button text='About Me' href='#aboutMe' />
+                <Button text='Skills' href='#skills' />
+                <Button text='Projects' href='#projects' />
                 <Button text='Contact' href='#contact' />
             </span>
         </nav>

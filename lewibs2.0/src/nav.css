@@ -1,3 +1,7 @@
+#nav {
+    z-index:5;
+}
+
 #nav #navButtons{
     position:absolute;
     right:0px;
