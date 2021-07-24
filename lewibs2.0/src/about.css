@@ -3,12 +3,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 50px auto;
-    padding: 50px;
-    padding: 0px;
     max-width: 800px;
     min-width: 170px;
     width: 80%;
+    margin: 0px auto;
+    margin:20px auto;
 }
 
 #aboutMe img {
@@ -18,25 +17,34 @@
 }
 
 #aboutMe .grid {
+    position:relative;
     display: grid;
     grid-template-areas: 'greeting greeting image' 'slogan slogan image' 'about about image' 'resume resume image';
-    background:white;
+    z-index: 5;
 }
 
 #aboutMe .grid::before {
     content: "";
-    display: block;
     position: absolute;
+    z-index: -1;
     width: 105%;
     height: 100%;
     background-color: #00a2e8;
     transform: skewY(-13deg) rotate(8deg) translate(-2%, 0%);
+}
+
+#aboutMe .grid::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ebebeb;
     z-index: -1;
 }
 
-
 #aboutMe .gridItem {
-    margin:10px;
+    margin: 10px;
 }
 
 #aboutMe img {

@@ -1,6 +1,6 @@
 #contact {
     text-align: center;
-    margin: 30px auto;
+    margin: 0px auto;
     max-width: 800px;
     min-width: 170px;
     width: 80%;
@@ -14,16 +14,16 @@
 
 #contact .quote {
     grid-area:quote;
+    padding:20px;
 }
 
 #contact .media {
     grid-area:media;
-    text-align:left;
+    font-size:30px;
 }
 
 #contact .contact {
     grid-area:contact;
-    text-align:right;
 }
 
 #contact .gridItem {
@@ -31,8 +31,49 @@
 }
 
 #bye {
-    margin:30px;
+    padding-top:30px;
 }
 
 #contact .fa {
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 5px;
+}
+
+#contact .contactInfo .text {
+    display:inline-block;
+}
+
+@media (min-width:386px) {
+    #contact .contact {
+        text-align: right;
+    }
+}
+
+@media (max-width:469px) and (min-width:386px) {
+    #contact .contactInfo .fa {
+        display:none;
+    }
+
+    #contact .contact {
+        margin-top:43px;
+    }
+
+    #contact .media {
+        grid-area: media;
+        font-size: 30px;
+    }
+}
+
+@media (max-width:386px) {
+    #contact .contactInfo .fa {
+        display: none;
+    }
+
+    #contact .grid {
+        grid-template-areas: 'quote' 'contact' 'media';
+    }
 }

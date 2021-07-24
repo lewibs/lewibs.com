@@ -3,8 +3,8 @@ import Button from './Button';
 
 function Project(props) {
     return (
-        <div className='project majorGridItem'>
-            <img src={props.image} height='300px;' width='300px' />
+        <div className='project'>
+            <img className='majorGridItem' src={props.image} height='300px;' width='300px' />
             <div className='info majorGridItem'>
                 <h3 className='minorGridItem'>{props.title}</h3>
                 <hr />

@@ -1,5 +1,5 @@
 #nav {
-    z-index:5;
+    z-index:100;
 }
 
 #nav #navButtons{
@@ -11,14 +11,24 @@
     margin-left:10px;
 }
 
+#nav .welcome {
+    display: none;
+}
+
 @media (max-width:1020px) {
     #navLogo {
         display: none;
     }
 }
 
-@media (max-width:675px) {
-    #nav {
+@media (max-width:515px) {
+    #nav .welcome {
+        display: inline-block;
+        text-align:center;
+        margin-left:10px;
+    }
+
+    #navButtons {
         display:none;
     }
 }

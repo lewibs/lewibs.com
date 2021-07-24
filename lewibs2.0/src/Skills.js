@@ -2,7 +2,7 @@ import './skills.css';
 
 function Skills() {
     return (
-        <section id='skills'>
+        <section id='skills' className='background4 color1 section'>
             <h2>Skills and Expertise</h2>
 
             <span className='skill'>
@@ -12,7 +12,7 @@ function Skills() {
             </span>
 
             <span className='skill'>
-                <i className="fa fa-tv"></i>
+                <i className="fa fa-tv color1"></i>
                 <h4>Software Development</h4>
                 <div>Java, Python, MATLAB</div>
             </span >
