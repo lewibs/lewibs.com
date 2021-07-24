@@ -47,13 +47,17 @@
     display:inline-block;
 }
 
-@media (min-width:386px) {
+@media (min-width:454px) {
     #contact .contact {
         text-align: right;
     }
+
+    #contact .media {
+        text-align: left;
+    }
 }
 
-@media (max-width:469px) and (min-width:386px) {
+@media (max-width:536px) and (min-width:454px) {
     #contact .contactInfo .fa {
         display:none;
     }
@@ -68,12 +72,12 @@
     }
 }
 
-@media (max-width:386px) {
+@media (max-width:454px) {
     #contact .contactInfo .fa {
         display: none;
     }
 
     #contact .grid {
-        grid-template-areas: 'quote' 'contact' 'media';
+        grid-template-areas: 'quote' 'media' 'contact';
     }
 }

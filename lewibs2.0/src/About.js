@@ -3,13 +3,13 @@ import './about.css';
 
 function About() {
     return (
-        <section className='section background3 aboutMe' >
+        <section className='section background2 aboutMe' >
             <div className='before' />
             <div id="aboutMe">
-                <div className='grid background3'>
+                <div className='grid background2'>
                     <img src='../images/BenjaminLewis.PNG' alt="Benjamin Lewis" />
                     <h1 className='gridItem'>Hey, I'm Benjamin</h1>
-                    <h4 className='gridItem'>I Make Stuff</h4>
+                    <h4 className='gridItem color3'>I Make Stuff</h4>
                     <div className='about gridItem'>
                         According to all known laws
                         of aviation,

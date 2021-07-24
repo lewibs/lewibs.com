@@ -10,7 +10,7 @@ function Contact() {
                         <h4>- Jean-Luc Picard</h4>
                     </div>
                     <div className="media gridItem">
-                        <strong>LEWIBS</strong>
+                        <strong>BENJAMIN</strong>
                         <br />
                         <a href="#" className="fa fa-instagram color1"></a>
                         <a href="#" className="fa fa-spotify color1"></a>
