@@ -1,4 +1,24 @@
 #projects {
+    padding: 10px;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width:800px;
+    width:80%;
+    margin:auto;
+
+}
+
+#projects h2 {
+    padding-bottom:30px;
+    text-align:center;
+}
+
+#projects .items {
+}
+
+.items .item{
     margin:auto;
     text-align:center;
 }

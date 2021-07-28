@@ -6,8 +6,6 @@ import Contact from './Contact';
 import Background from './Background';
 import Skills from './Skills';
 
-//<Projects />
-
 function App() {
     return (
         <div>

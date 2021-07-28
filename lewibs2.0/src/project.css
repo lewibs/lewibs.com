@@ -1,46 +1,41 @@
 .project {
-    display: grid;
-    grid-template-areas: 'img info';
-    max-width:700px;
-    background:grey;
-    margin:10px;
+    width:300px;
+    margin:auto;
+    display:grid;
+    grid-template-areas:'content';
+    padding:10px;
+    position:relative;
 }
 
 .project img {
-    grid-area:img;
+    grid-area:content;
 }
 
 .project .info {
-    height: 100%;
-    display: grid;
-    grid-area: info;
-    text-align: left;
-    grid-template-areas: 'header' 'line' 'info' 'buttons'
+    grid-area:content;
+    padding:20px;
+    background-color:rgba(1, 1, 1, 0.7);
+    display:none;
 }
 
-.project h3 {
-    grid-area:header;
+.project .info h3 {
+    display:none;
 }
 
-.project hr {
-    grid-area: line;
-    height:0px;
+.project .info hr {
+    display: none;
 }
 
-.project article {
-    grid-area: info;
+.project .info article {
+    display: none;
 }
 
 .project .buttons {
-    grid-area: buttons;
+    diaplay:none;
+    position: absolute;
+    bottom:10px;
 }
 
-
-.project .majorGridItem{
-    margin-right:10px;
+.project .btn {
+    margin:10px;
 }
-
-.project .minorGridItem {
-    margin: 10px;
-}
-
