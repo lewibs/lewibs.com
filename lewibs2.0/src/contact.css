@@ -57,7 +57,7 @@
     }
 }
 
-@media (max-width:536px) and (min-width:454px) {
+@media (max-width:590px) and (min-width:454px) {
     #contact .contactInfo .fa {
         display:none;
     }

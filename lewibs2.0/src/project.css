@@ -1,5 +1,5 @@
 .project {
-    width:300px;
+    width:250px;
     margin:auto;
     display:grid;
     grid-template-areas:'content';
@@ -31,7 +31,7 @@
 }
 
 .project .buttons {
-    diaplay:none;
+    display:none;
     position: absolute;
     bottom:10px;
 }
