@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     max-width: 800px;
-    min-width: 170px;
+    min-width: 150px;
     width: 80%;
     margin:20px auto;
 }
@@ -26,10 +26,10 @@
     content: "";
     position: absolute;
     z-index: -1;
-    width: 105%;
+    width: 100%;
     height: 100%;
     background-color: #00a2e8;
-    transform: skewY(-13deg) rotate(8deg) translate(-2%, 0%);
+    transform: skewY(-13deg) rotate(8deg) translate(0%, 0%);
 }
 
 #aboutMe .grid::after {

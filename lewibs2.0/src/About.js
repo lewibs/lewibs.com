@@ -12,7 +12,8 @@ function About() {
                     <h4 className='gridItem color3'>I Make Stuff</h4>
                     <div className='about gridItem'>
                         I am passionate about design in all its shapes and sizes. 
-                        My introduction into development was through making hovercrafts it was here that I learned that I enjoyed making things.
+                        My introduction into development was through making hovercrafts.
+                        It was here that I learned that I enjoyed making things.
                         In college I quickly realized it was not just physical design that excited me but the process and creation of a system.
                         This joy was easily translated into computer science projects.
                         I have come to realize that the best design is not only practical but also conveys a feeling which raises the quality of the project.
