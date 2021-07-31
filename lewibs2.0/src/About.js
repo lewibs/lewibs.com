@@ -11,45 +11,15 @@ function About() {
                     <h1 className='gridItem'>Hey, I'm Benjamin</h1>
                     <h4 className='gridItem color3'>I Make Stuff</h4>
                     <div className='about gridItem'>
-                        According to all known laws
-                        of aviation,
-
-                     
-                        there is no way a bee
-                        should be able to fly.
-
-                     
-                        Its wings are too small to get
-                        its fat little body off the ground.
-
-                     
-                        The bee, of course, flies anyway
-
-                     
-                        because bees don't care
-                        what humans think is impossible.
-
-                     
-                        Yellow, black. Yellow, black.
-                        Yellow, black. Yellow, black.
-
-                     
-                        Ooh, black and yellow!
-                        Let's shake it up a little.
-
-                     
-                        Barry! Breakfast is ready!
-
-                     
-                        Ooming!
-
-                     
-                        Hang on a second.
-
-                     
-                        Hello?
+                        I am passionate about design in all its shapes and sizes. 
+                        My introduction into development was through making hovercrafts it was here that I learned that I enjoyed making things.
+                        In college I quickly realized it was not just physical design that excited me but the process and creation of a system.
+                        This joy was easily translated into computer science projects.
+                        I have come to realize that the best design is not only practical but also conveys a feeling which raises the quality of the project.
+                        I am interested in full stack development and machine learning.
+                        Feel free to send me a text or an email. I'll enjoy talking to you!
                     </div>
-                    <Button className='resume gridItem background5 color1' text='My Resume' href='#' />
+                    <Button className='resume gridItem background5 color1' text='My Resume' href='benjamin_resume.pdf' />
                 </div>
             </div>
         </section>
