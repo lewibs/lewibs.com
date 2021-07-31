@@ -13,10 +13,14 @@ function App() {
             <Home />
             <Nav />
             <main>
+                <div className='anchor' id='aboutAnchor' />
                 <About />
+                <div className='anchor' id='skillsAnchor' />
                 <Skills />
+                <div className='anchor' id='projectsAnchor' />
                 <Projects />
             </main>
+            <div className='anchor' id='contactAnchor' />
             <Contact />
         </div>
     );

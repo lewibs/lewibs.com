@@ -7,3 +7,7 @@
     height:18px;
     text-align:center;
 }
+
+.btn:hover {
+    background: #444;
+}

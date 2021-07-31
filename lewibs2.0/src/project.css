@@ -39,3 +39,7 @@
 .project .btn {
     margin:10px;
 }
+
+.project .btn:hover {
+      background:#999;  
+}

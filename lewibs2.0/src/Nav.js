@@ -15,10 +15,10 @@ function Nav() {
                 Wecome to my website!
             </span>
             <span id="navButtons">
-                <Button className='color1' text='About Me' href='#aboutMe' />
-                <Button className='color1' text='Skills' href='#skills' />
-                <Button className='color1' text='Projects' href='#projects' />
-                <Button className='color1' text='Contact' href='#contact' />
+                <Button className='color1' text='About Me' href='#aboutAnchor' />
+                <Button className='color1' text='Skills' href='#skillsAnchor' />
+                <Button className='color1' text='Projects' href='#projectsAnchor' />
+                <Button className='color1' text='Contact' href='#contactAnchor' />
             </span>
         </nav>
     );
