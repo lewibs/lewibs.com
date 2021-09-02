@@ -38,7 +38,7 @@ export default class Projects extends Component {
                     <div className='slider'>
                         <Slider {...settings}>
                             <div>
-                                <Project image='../images/wackamon.PNG' title='Wakamon' link='http://wackamon.lewibs.com/' info='Wack-A-Mon implements the use of a FSM. This is used to simplify the code and make the program smoother.' />
+                                <Project image='../images/wackamon.PNG' title='Wakamon' link='http://wackamon.lewibs.com/' info='Wack-A-Mon implements the use of a FSM. This is used to simplify the code and make the program smoother. Additionally, it implements ajax to include a highscore list.' />
                             </div>
                             <div>
                                 <Project image='../images/ticTacToe.PNG' title='Tic-Tac-Toe' link='https://github.com/lewibs/tic-tac-toe' info='This was made for a matlab TA interview. It was not intended to involve machine learning, but now that has been implemented, and the program uses past games to improve upon itself.' />
