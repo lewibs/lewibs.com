@@ -1,4 +1,4 @@
-import Me from './Me';
+import Me from './three/Me';
 import "./App.css";
 
 function App() {
