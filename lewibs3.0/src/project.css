@@ -1,0 +1,45 @@
+.project {
+    width:250px;
+    margin:auto;
+    display:grid;
+    grid-template-areas:'content';
+    padding:10px;
+    position:relative;
+}
+
+.project img {
+    grid-area:content;
+}
+
+.project .info {
+    grid-area:content;
+    padding:20px;
+    background-color:rgba(1, 1, 1, 0.7);
+    display:none;
+}
+
+.project .info h3 {
+    display:none;
+}
+
+.project .info hr {
+    display: none;
+}
+
+.project .info article {
+    display: none;
+}
+
+.project .buttons {
+    display:none;
+    position: absolute;
+    bottom:10px;
+}
+
+.project .btn {
+    margin:10px;
+}
+
+.project .btn:hover {
+      background:#999;  
+}
