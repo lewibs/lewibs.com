@@ -85,9 +85,7 @@ function Head() {
         materials.preload();
         loader.setMaterials(materials);
     });
-
-    //https://raw.githubusercontent.com/lewibs/lewibs.com/main/lewibs3.0/public/3d/suit/astronaut-helmet/source/Sketchfab%Model.fbx"
-
+    
     return (
         <mesh position={[0,0,-3]} rotation={[x, y, 0]}>
             {eyes}
