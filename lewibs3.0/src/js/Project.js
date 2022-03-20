@@ -1,7 +1,5 @@
-import "./project.css";
+import "../css/project.css";
 import Button from './Button';
-import $ from 'jquery';
-
 
 function Project(props) {
     return (
@@ -20,7 +18,5 @@ function Project(props) {
         </div>
     );
 }
-
-//$('.project').hover(function () { $('.project .info').css('display', 'inline') }, function () { $('.project .info').css('display', 'none') })
 
 export default Project;

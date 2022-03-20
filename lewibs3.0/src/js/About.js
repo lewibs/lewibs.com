@@ -1,5 +1,5 @@
 import Button from './Button';
-import './about.css';
+import '../css/about.css';
 
 function About() {
     return (

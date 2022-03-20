@@ -3,7 +3,7 @@ import React, { useMemo, useRef, useLayoutEffect } from 'react'
 import { extend, useLoader } from '@react-three/fiber'
 import { FontLoader } from 'three/examples/jsm/loaders/FontLoader'
 import { TextGeometry } from 'three/examples/jsm/geometries/TextGeometry'
-import boldUrl from './assets/fonts/bold.blob'
+import boldUrl from '../assets/fonts/bold.blob'
 
 extend({ TextGeometry })
 

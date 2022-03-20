@@ -1,4 +1,4 @@
-import './background.css';
+import '../css/background.css';
 import Me from './Me.js';
 
 function Empty() {

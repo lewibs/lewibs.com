@@ -1,4 +1,4 @@
-import './projects.css';
+import '../css/projects.css';
 import Project from './Project';
 import React, { Component } from "react";
 import Slider from "react-slick";

@@ -1,4 +1,4 @@
-import './nav.css';
+import '../css/nav.css';
 import Button from './Button'
 
 function Nav() {
