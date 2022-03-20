@@ -39,7 +39,7 @@ function LaserEyes({position}) {
 }
 
 function Suit({position, scale}) {
-    const fbx = useLoader(FBXLoader, "3d/suit/astronaut-helmet/source/Sketchfab Model.fbx");
+    const fbx = useLoader(FBXLoader, "3d/suit/astronaut-helmet/source/SketchfabModel.fbx");
     return <primitive object={fbx} position={position} scale={scale} />
 }
 
