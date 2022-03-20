@@ -81,10 +81,12 @@ function Head() {
 
     //THREE.DefaultLoadingManager.addHandler(/\.dds$/i, new DDSLoader());
     const materials = useLoader(MTLLoader, "3d/head/head.mtl");
-    const obj = useLoader(OBJLoader, "3d/head/head.obj", (loader) => {
+    const obj = useLoader(OBJLoader, "https://raw.githubusercontent.com/lewibs/lewibs.com/main/lewibs3.0/public/3d/head/head.obj", (loader) => {
         materials.preload();
         loader.setMaterials(materials);
     });
+
+    //https://raw.githubusercontent.com/lewibs/lewibs.com/main/lewibs3.0/public/3d/suit/astronaut-helmet/source/Sketchfab%Model.fbx"
 
     return (
         <mesh position={[0,0,-3]} rotation={[x, y, 0]}>
