@@ -14,13 +14,13 @@ function Skills() {
             <span className='skill'>
                 <i className="fa fa-tv color1"></i>
                 <h4>Software Development</h4>
-                <div>AWS, cPanel, Spring, Django, eclipse, linux, mongoDB</div>
+                <div>AWS, cPanel, Spring, eclipse, linux, mongoDB, OOP, functional</div>
             </span >
 
             <span className='skill'>
                 <i className="fa fa-pencil"></i>
                 <h4>Languages</h4>
-                <div>python, javascript, php, java, c, assembly, bash, MATLAB</div>
+                <div>python, javascript, php, java, c, assembly, bash, MATLAB, haskell</div>
             </span>
         </section>  
     );
