@@ -33,15 +33,28 @@ export default class Projects extends Component {
         return (
             <section className='background2 section'>
                 <div id='projects'>
-                    <h2>Small Projects</h2>
+                    <h2>Projects</h2>
 
                     <div className='slider'>
                         <Slider {...settings}>
                             <div>
                                 <Project image='../images/wackamon.PNG' title='Wakamon' link='http://wackamon.lewibs.com/' info='Wack-A-Mon implements the use of a FSM. This is used to simplify the code and make the program smoother. Additionally, it implements ajax to include a highscore list.' />
                             </div>
+                            
+                            <div>
+                                <Project image='../images/eventador.png' title="eventador" link="https://www.npmjs.com/package/eventador" info="This project seamlessly allows you to make your events more robust and usable. This is done while maintaining standard js syntax and backwards compatibility." />
+                            </div>
+
+                            <div>
+                                <Project image='../images/keylogger.png' title="lewibs-keylogger" link="https://www.npmjs.com/package/lewibs-keylogger" info='This keylogger was created to help save development time when the users actions needed to be verified or logged.' />
+                            </div>
+
                             <div>
                                 <Project image='../images/ticTacToe.PNG' title='Tic-Tac-Toe' link='https://github.com/lewibs/tic-tac-toe' info='This was made for a matlab TA interview. It was not intended to involve machine learning, but now that has been implemented, and the program uses past games to improve upon itself.' />
+                            </div>
+
+                            <div>
+                                <Project image='https://github.com/ottery-app/global-data/blob/main/images/logos/logoDefault.png?raw=true' title="oui" link='https://www.npmjs.com/package/ottery-ui' info="Oui is the opensource ux framework, that I designed for ottery, a very large team project which I lead. Used for handling orginizations' security needs." />
                             </div>
 
                             <div>
