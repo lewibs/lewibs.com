@@ -66,6 +66,10 @@ export default class Projects extends Component {
                             </div>
 
                             <div>
+                                <Project image="https://github.com/lewibs/whatTheDuckIsThis/blob/main/images/duckscript.png?raw=true" title="whatTheDuckIsThis" link="https://github.com/lewibs/whatTheDuckIsThis" info="This is an ongoing project of refining and documenting what I've learned in js in order to maintain consistency, share knowlage, and push for improvement." />
+                            </div>
+
+                            <div>
                                 <Project image='../images/wisdomDog.PNG' title='Wisdom Dog' link='http://wisdomdog.lewibs.com/' info='I made the wisdom dog to experiment with interactive websites and see how babble works. It was my first website using the basics.' />
                             </div>
                         </Slider>

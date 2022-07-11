@@ -13,13 +13,12 @@ function About() {
                     <div className='about gridItem'>
                         I am passionate about design in all its shapes and sizes.
                         I've made things ranging from, hovercraft to robots, websites
-                        to games, all the way up to security applications and 4D imaging
+                        to games, language frameworks to ui frameworks, all the way up to security applications and 4D imaging
                         tools for power plants.
                         I love to learn new things that allow me to look at the world in different and imaginitive ways.
                         <br/>
                         <br/>
-                        Right now, I'm enjoying working as a lead developer for a startup called <a href="https://powern.ai/">PowerN</a> and I'm always thinking
-                        about the next program I can write.
+                        Right now, I'm enjoying working as a lead developer for a startup called <a href="https://powern.ai/">PowerN</a>. But that doesn't mean I'm not working on projects. If you've got a fun idea and want help. Let me know!
                     </div>
                     <Button className='resume gridItem background5 color1' text='Resume' href='benjamin_resume.pdf' />
                 </div>
