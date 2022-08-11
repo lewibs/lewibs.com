@@ -1,6 +1,6 @@
 import '../css/button.css'
 
-function Button(props) {
+export function Button(props) {
 
     return (
         <a className={props.className + " btn"} href={props.href}>{props.text}</a>
