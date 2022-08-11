@@ -11,8 +11,8 @@ import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import UserTracker from "usability-tracker";
 
-const user = new UserTracker("lewibs.com", (v)=>{
-    console.log("append db with...", JSON.stringify(v));
+const user = new UserTracker((v)=>{
+    console.log(JSON.stringify(v.userID));
 }); 
 
 function Nav() {
