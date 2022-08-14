@@ -66,11 +66,15 @@ export default class Projects extends Component {
                             </div>
 
                             <div>
-                                <Project image="https://github.com/lewibs/whatTheDuckIsThis/blob/main/images/duckscript.png?raw=true" title="whatTheDuckIsThis" link="https://github.com/lewibs/whatTheDuckIsThis" info="This is an ongoing project of refining and documenting what I've learned in js in order to maintain consistency, share knowlage, and push for improvement." />
+                                <Project image="https://github.com/lewibs/whatTheDuckIsThis/blob/main/images/duckscript.png?raw=true" title="ducktyper" link="https://github.com/lewibs/ducktyper" info="This is a project that allows type checking in javascript without needing to add typscript." />
                             </div>
 
                             <div>
                                 <Project image='../images/wisdomDog.PNG' title='Wisdom Dog' link='http://wisdomdog.lewibs.com/' info='I made the wisdom dog to experiment with interactive websites and see how babble works. It was my first website using the basics.' />
+                            </div>
+
+                            <div>
+                                <Project image='https://codestoresolutions.com/wp-content/uploads/2020/03/testing.png' title='usability-tracker' link='https://www.npmjs.com/package/usability-tracker' info="While reading the book, 'Don't Make Me Think', I was hit with this idea. It is a program that tracks the user movment and actions and allows saving them and playing them back." />
                             </div>
                         </Slider>
                     </div>

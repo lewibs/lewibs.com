@@ -10,10 +10,15 @@ import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import UserTracker from "usability-tracker";
+import { AxiosInst } from './AxiosInst';
 
-const user = new UserTracker((v)=>{
-    console.log(JSON.stringify(v.userID));
-}); 
+const user = new UserTracker((log)=>{
+    AxiosInst.post("/logger/log", log)
+    //no point
+    .then(()=>{})
+    //no point
+    .catch(()=>{});
+});
 
 function Nav() {
     const [input, setInput] = React.useState(undefined);
@@ -24,8 +29,15 @@ function Nav() {
         }
 
         function saveInput(string) {
-            console.error(string);
-            console.log(user.toString())
+            AxiosInst.post("/logger/input", {
+                userID: localStorage.getItem("lewibs-UserTracker-usrID"),
+                input: string,
+                time: new Date().getTime(),
+                status: (happy) ? "good" : "bad",
+            })
+            .then(()=>{console.log("Thanks for the feedback!")})
+            .catch(()=>{console.warn("that didn't work. I didn't get the feedback")});
+
             closeInput()
         }
 
