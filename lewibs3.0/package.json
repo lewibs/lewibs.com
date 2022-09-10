@@ -21,7 +21,6 @@
     "react-three-fiber": "^6.0.13",
     "sass": "^1.49.9",
     "three": "^0.142.0",
-    "usability-tracker": "^1.0.3",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

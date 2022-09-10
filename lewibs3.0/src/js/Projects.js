@@ -76,6 +76,10 @@ export default class Projects extends Component {
                             <div>
                                 <Project image='https://codestoresolutions.com/wp-content/uploads/2020/03/testing.png' title='usability-tracker' link='https://www.npmjs.com/package/usability-tracker' info="While reading the book, 'Don't Make Me Think', I was hit with this idea. It is a program that tracks the user movment and actions and allows saving them and playing them back." />
                             </div>
+
+                            <div>
+                                <Project image='../images/blackeye.png' title="metamadness" link='https://github.com/lewibs/metamadness' info="Metamadness is my own varient of black eye. Rather then only making a phishing attack, this also updates the meta tags to appear as it's going to a specific link." />
+                            </div>
                         </Slider>
                     </div>
                 </div>

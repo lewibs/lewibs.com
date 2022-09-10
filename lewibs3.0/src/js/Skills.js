@@ -9,14 +9,14 @@ function Skills() {
                 <span className='skill'>
                     <i className="fa fa-code"></i>
                     <h4>Web/App Development</h4>
-                    <div>React, axios, potree, three.js, nativescript jquery, styled-components, html/css</div>
+                    <div>React, axios, potree, three.js, IFC.js, potree, nativescript jquery, styled-components, html/css</div>
                 </span>
 
                 <span className='skill'>
                     <i className="fa fa-tv color1"></i>
                     <h4>Software Development</h4>
-                    <div>AWS, cPanel, Spring, eclipse, linux, mongoDB, gin, node, OOP, functional</div>
-                </span >
+                    <div>AWS, cPanel, Spring, eclipse, linux, mongoDB, gin, node, OOP, functional, SQL, Spring, Hibernate</div>
+                </span>
 
                 <span className='skill'>
                     <i className="fa fa-pencil"></i>
