@@ -18,7 +18,7 @@ function About() {
                         I love to learn new things that allow me to look at the world in different and imaginitive ways.
                         <br/>
                         <br/>
-                        Right now, I'm enjoying working as a lead developer for a startup called <a href="https://powern.ai/">PowerN</a>. But that doesn't mean I'm not working on projects. If you've got a fun idea and want help. Let me know!
+                        Right now, I'm enjoying working as a lead developer for a startup called <a href="https://powern.ai/">PowerN</a> and I'm in the process of starting my own company named ottery!
                     </div>
                     <Button className='resume gridItem background5 color1' text='Resume' href='benjamin_resume.pdf' />
                 </div>

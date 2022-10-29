@@ -15,7 +15,7 @@ function Skills() {
                 <span className='skill'>
                     <i className="fa fa-tv color1"></i>
                     <h4>Software Development</h4>
-                    <div>AWS, cPanel, Spring, eclipse, linux, mongoDB, gin, node, OOP, functional, SQL, Spring, Hibernate</div>
+                    <div>AWS, cPanel, Spring, eclipse, Mongoose, Nestjs, linux, mongoDB, gin, node, OOP, functional, SQL, Spring, Hibernate</div>
                 </span>
 
                 <span className='skill'>

@@ -66,7 +66,7 @@ export default class Projects extends Component {
                             </div>
 
                             <div>
-                                <Project image="https://github.com/lewibs/whatTheDuckIsThis/blob/main/images/duckscript.png?raw=true" title="ducktyper" link="https://github.com/lewibs/ducktyper" info="This is a project that allows type checking in javascript without needing to add typscript." />
+                                <Project image="../images/duckscript.png" title="ducktyper" link="https://github.com/lewibs/ducktyper" info="This is a project that allows type checking in javascript without needing to add typscript." />
                             </div>
 
                             <div>
