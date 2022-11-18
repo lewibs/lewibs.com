@@ -4,7 +4,7 @@ import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader'
 import { FBXLoader } from 'three/examples/jsm/loaders/FBXLoader'
 import { MTLLoader } from "three/examples/jsm/loaders/MTLLoader";
 import { useLoader } from '@react-three/fiber'
-import { Stars } from "@react-three/drei";
+import { Stars, useProgress } from "@react-three/drei";
 import { Suspense } from "react";
 import Text from "./Text";
 import Loading from "./Loading";
@@ -61,8 +61,20 @@ function Head( {callBack} ) {
 
     React.useEffect(()=>{
         let headPos = (e) => {
-            let xPos = e.clientY - (window.innerHeight / 2);
-            let yPos = e.clientX - (window.innerWidth / 2);
+            let xPos;
+            let yPos;
+
+            if (e.touches) {
+                //fliped cause idk
+                yPos = e.touches[0].pageX;
+                xPos = e.touches[0].pageY;
+            } else {
+                xPos = e.clientY;
+                yPos = e.clientX;
+            }
+
+            xPos = xPos - (window.innerHeight / 2);
+            yPos = yPos - (window.innerWidth / 2);
             setX(xPos / window.innerWidth);
             setY(yPos / window.innerHeight);
         }
@@ -81,15 +93,16 @@ function Head( {callBack} ) {
 
         var is_mobile = !!navigator.userAgent.match(/iphone|android|blackberry/ig) || false;
 
+
         if (!is_mobile) {
             window.addEventListener('mousemove', headPos);
+            window.addEventListener("mousedown", lazersOn);
+            window.addEventListener("mouseup", lazersOff);
+        } else {
+            window.addEventListener('touchstart', headPos);
+            window.addEventListener("touchstart", lazersOn);
+            window.addEventListener("touchend", lazersOff);
         }
-
-        window.addEventListener("mousedown", lazersOn);
-        window.addEventListener("touchstart", lazersOn);
-
-        window.addEventListener("mouseup", lazersOff);
-        window.addEventListener("touchend", lazersOff);
     });
 
     //THREE.DefaultLoadingManager.addHandler(/\.dds$/i, new DDSLoader());
@@ -124,12 +137,15 @@ function squish(x, min, max) {
 
 function Me() {
     const [loading, setLoading] = useState(<Loading />);
+    const progress = useProgress();
+
+    window.addEventListener("mousedown", (e)=>{})
 
     React.useEffect(()=>{
-        setTimeout(() => {
-            setLoading(true);
-        }, 7000);
-    });
+        if (progress.progress === 100) {
+            setLoading(undefined)
+        }
+    }, [progress]);
 
     return (
         <>

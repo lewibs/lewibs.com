@@ -64,7 +64,7 @@
             transform-origin: 33% center;
             box-shadow: 2px -10px 0px rgba(0, 0, 0, 0.1),
                inset -5px -10px 0px rgba(0, 0, 0, 0.1);
-            animation: ring 3s ease infinite;
+            animation: ring 7s ease infinite;
    
             @keyframes ring {
                0% {
@@ -133,7 +133,7 @@
                position: absolute;
                border-radius: 100%;
                box-shadow: inset -2px 3px 0px rgba(0, 0, 0, 0.3);
-               animation: dots 5s ease infinite alternate;
+               //animation: dots 10s ease infinite alternate;
    
                @keyframes dots {
                   0% {
@@ -201,7 +201,7 @@
          position: absolute;
          bottom: -20px;
          font-family: "Roboto Mono", monospace;
-         animation: text 4s ease infinite;
+         //animation: text 10s ease infinite;
          width: 100px;
          text-align: center;
    
