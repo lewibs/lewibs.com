@@ -1,0 +1,23 @@
+#skills {
+    text-align: center;
+    vertical-align: text-top;
+    width:100%;
+    padding:20px 0px;
+}
+
+#skillbar {
+    display: flex;
+    justify-content: center;
+    text-align: text-top;
+}
+
+#skills .skill{
+    display:inline-block;
+    margin: 10px;
+    text-align:center;
+    width: 200px;
+}
+
+#skills .fa {
+    font-size: 50px;
+}

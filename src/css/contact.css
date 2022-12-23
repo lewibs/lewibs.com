@@ -1,0 +1,83 @@
+#contact {
+    text-align: center;
+    margin: 0px auto;
+    max-width: 800px;
+    min-width: 170px;
+    width: 80%;
+}
+
+#contact .grid {
+    display: grid;
+    grid-template-areas: 'quote quote' 'media contact';
+    text-align:center;
+}
+
+#contact .quote {
+    grid-area:quote;
+    padding:20px;
+}
+
+#contact .media {
+    grid-area:media;
+    font-size:30px;
+}
+
+#contact .contact {
+    grid-area:contact;
+}
+
+#contact .gridItem {
+    margin:10px;
+}
+
+#bye {
+    padding-top:30px;
+}
+
+#contact .fa {
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 5px;
+}
+
+#contact .contactInfo .text {
+    display:inline-block;
+}
+
+@media (min-width:454px) {
+    #contact .contact {
+        text-align: right;
+    }
+
+    #contact .media {
+        text-align: left;
+    }
+}
+
+@media (max-width:590px) and (min-width:454px) {
+    #contact .contactInfo .fa {
+        display:none;
+    }
+
+    #contact .contact {
+        margin-top:43px;
+    }
+
+    #contact .media {
+        grid-area: media;
+        font-size: 30px;
+    }
+}
+
+@media (max-width:454px) {
+    #contact .contactInfo .fa {
+        display: none;
+    }
+
+    #contact .grid {
+        grid-template-areas: 'quote' 'media' 'contact';
+    }
+}
