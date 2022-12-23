@@ -1,0 +1,64 @@
+import './projects.css';
+import Project from './Project';
+import React, { Component } from "react";
+import Slider from "react-slick";
+
+export default class Projects extends Component {
+    render() {
+        const settings = {
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 3500,
+            responsive: [
+                {
+                    breakpoint: 985,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 660,
+                    settings: {
+                        slidesToShow: 1,
+                        autoplay: false
+                    }
+                }
+            ]
+        };
+
+        return (
+            <section className='background2 section'>
+                <div id='projects'>
+                    <h2>Projects</h2>
+
+                    <div className='slider'>
+                        <Slider {...settings}>
+                            <div>
+                                <Project image='../images/wackamon.PNG' title='Wakamon' link='http://wackamon.lewibs.com/' info='Wack-A-Mon implements the use of a FSM. This is used to simplify the code and make the program smoother. Additionally, it implements ajax to include a highscore list.' />
+                            </div>
+                            <div>
+                                <Project image='../images/ticTacToe.PNG' title='Tic-Tac-Toe' link='https://github.com/lewibs/tic-tac-toe' info='This was made for a matlab TA interview. It was not intended to involve machine learning, but now that has been implemented, and the program uses past games to improve upon itself.' />
+                            </div>
+
+                            <div>
+                                <Project image='../images/clueSheet.PNG' title='Sheet-O-Matic' link='http://cluesheet.lewibs.com/' info='This game gives you an unfair advantage in CLUE as it looks back through past guesses and uses logic to determine who did the crime.' />
+                            </div>
+
+                            <div>
+                                <Project image='../images/movieNightEtc.PNG' title='Movie Night Etc.' link='http://movienightetc.lewibs.com/' info='Movie Night Etc was part of an elaborate joke to make a blog. I taught myself PHP to make this website. This website is what introduced me to web development.' />
+                            </div>
+
+                            <div>
+                                <Project image='../images/wisdomDog.PNG' title='Wisdom Dog' link='http://wisdomdog.lewibs.com/' info='I made the wisdom dog to experiment with interactive websites and see how babble works. It was my first website using the basics.' />
+                            </div>
+                        </Slider>
+                    </div>
+                </div>
+            </section>
+        );
+    }
+}

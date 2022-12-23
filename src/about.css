@@ -1,0 +1,74 @@
+#aboutMe {
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    min-width: 150px;
+    width: 80%;
+    margin:20px auto;
+}
+
+#aboutMe img {
+    height: 293px;
+    /*transform: translate(0px, -30px);
+    margin-bottom: -35px;*/
+}
+
+#aboutMe .grid {
+    position:relative;
+    display: grid;
+    grid-template-areas: 'greeting greeting image' 'slogan slogan image' 'about about image' 'resume resume image';
+    z-index: 5;
+}
+
+#aboutMe .grid::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: #00a2e8;
+    transform: skewY(-13deg) rotate(8deg) translate(0%, 0%);
+}
+
+#aboutMe .grid::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #dcdcdc;
+    z-index: -1;
+}
+
+#aboutMe .gridItem {
+    margin: 10px;
+}
+
+#aboutMe img {
+    grid-area: image;
+}
+
+#aboutMe h1 {
+    grid-area: greeting;
+}
+
+#aboutMe h4 {
+    grid-area:slogan;
+}
+
+#aboutMe .resume {
+    grid-area:resume;
+    width: 100px;
+}
+
+#aboutMe .about {
+    grid-area: about;
+}
+
+@media (max-width:850px) {
+    #aboutMe img {
+        display: none;
+    }
+}
