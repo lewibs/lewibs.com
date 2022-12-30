@@ -5,5 +5,5 @@ export const meta = {
         software: "https://raw.githubusercontent.com/lewibs/lewibs.com/3.0/meta/skills/software.txt",
         languages: "https://raw.githubusercontent.com/lewibs/lewibs.com/3.0/meta/skills/languages.txt"
     },
-    projects: "link",
+    projects: "https://raw.githubusercontent.com/lewibs/lewibs.com/3.0/meta/projects/meta.json",
 }
