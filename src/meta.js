@@ -6,4 +6,8 @@ export const meta = {
         languages: "https://raw.githubusercontent.com/lewibs/lewibs.com/3.0/meta/skills/languages.txt"
     },
     projects: "https://raw.githubusercontent.com/lewibs/lewibs.com/3.0/meta/projects/meta.json",
+    images: {
+        me: "",
+        icon : "",
+    }
 }
