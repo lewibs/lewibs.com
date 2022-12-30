@@ -1,7 +1,20 @@
 import Button from './Button';
 import '../css/about.css';
+import { useEffect } from 'react';
+import { useState } from 'react';
+import axios from 'axios';
+import {meta} from "../meta";
 
 function About() {
+    const [about, setAbout] = useState("");
+
+    useEffect(async ()=>{
+        axios.get(meta.about)
+        .then((res)=>{
+            setAbout(res.data);
+        })
+    },[])
+
     return (
         <section className='section background2 aboutMe' >
             <div className='before' />
@@ -11,14 +24,7 @@ function About() {
                     <h1 className='gridItem'>Hey, I'm Benjamin</h1>
                     <h4 className='gridItem color3'>I Make Stuff</h4>
                     <div className='about gridItem'>
-                        I am passionate about design in all its shapes and sizes.
-                        I've made things ranging from, hovercraft to robots, websites
-                        to games, language frameworks to ui frameworks, all the way up to security applications and 4D imaging
-                        tools for power plants.
-                        I love to learn new things that allow me to look at the world in different and imaginitive ways.
-                        <br/>
-                        <br/>
-                        Right now, I'm enjoying working as a lead developer for a startup called <a href="https://powern.ai/">PowerN</a> and I'm in the process of starting my own company named ottery!
+                       {about}
                     </div>
                     <Button className='resume gridItem background5 color1' text='Resume' href='benjamin_resume.pdf' />
                 </div>
