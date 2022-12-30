@@ -8,12 +8,6 @@ function Nav() {
             <span id="navHome">
                 <Button className='color1' text='lewibs' href='#home' />
             </span>
-            <span id="navLogo">
-                At the end of the day whoever has the longest Wikipedia wins.
-            </span>
-            <span className='welcome'>
-                Wecome to my website!
-            </span>
             <span id="navButtons">
                 <Button className='color1' text='About Me' href='#aboutAnchor' />
                 <Button className='color1' text='Skills' href='#skillsAnchor' />

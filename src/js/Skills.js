@@ -12,7 +12,7 @@ function Skills() {
         axios.get(meta.skills.web).then(({data})=>setWeb(data));
         axios.get(meta.skills.software).then(({data})=>setSoftware(data));
         axios.get(meta.skills.languages).then(({data})=>setLanguages(data));
-    },[])
+    },[]);
 
     return (
         <section id='skills' className='background4 color1 section'>
