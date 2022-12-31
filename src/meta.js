@@ -6,7 +6,7 @@ export const meta = {
     },
     skills: {
         web: "https://raw.githubusercontent.com/lewibs/lewibs.com/3.0/meta/skills/web.txt",
-        software: "https://raw.githubusercontent.com/lewibs/lewibs.com/3.0/meta/skills/software.txt",
+        backend: "https://raw.githubusercontent.com/lewibs/lewibs.com/3.0/meta/skills/backend.txt",
         languages: "https://raw.githubusercontent.com/lewibs/lewibs.com/3.0/meta/skills/languages.txt"
     },
     projects: "https://raw.githubusercontent.com/lewibs/lewibs.com/3.0/meta/projects/meta.json",
