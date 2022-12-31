@@ -5,9 +5,9 @@ export const meta = {
         resume: "https://github.com/lewibs/lewibs.com/blob/3.0/meta/resume/benjamin_resume.pdf?raw=true",
     },
     skills: {
-        web: "https://raw.githubusercontent.com/lewibs/lewibs.com/3.0/meta/skills/web.txt",
-        backend: "https://raw.githubusercontent.com/lewibs/lewibs.com/3.0/meta/skills/backend.txt",
-        languages: "https://raw.githubusercontent.com/lewibs/lewibs.com/3.0/meta/skills/languages.txt"
+        web: "https://raw.githubusercontent.com/lewibs/lewibs.com/3.0/meta/skills/web.json",
+        backend: "https://raw.githubusercontent.com/lewibs/lewibs.com/3.0/meta/skills/backend.json",
+        languages: "https://raw.githubusercontent.com/lewibs/lewibs.com/3.0/meta/skills/languages.json"
     },
     projects: "https://raw.githubusercontent.com/lewibs/lewibs.com/3.0/meta/projects/meta.json",
     images: {
