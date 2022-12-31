@@ -9,6 +9,7 @@ import { meta } from "../meta";
 import { useState } from "react";
 import { Button } from "../components/Button";
 import { noMid } from "../style/hideable";
+import { Title } from "../components/Title";
 import { injectStyle } from "../functions/injectStyle";
 
 const height = "300px";
@@ -102,7 +103,7 @@ export const About = React.forwardRef(({}, ref) => {
             <Frame container={ref}>
                 <AboutMe>
                     <Text>
-                        <h2>Hey, I'm Benjamin</h2>
+                        <Title>Hey, I'm Benjamin</Title>
                         <h4>I Make Stuff</h4>
                         {/*https://raw.githubusercontent.com/lewibs/lewibs.com/3.0/meta/images/05onfire1_xp-superJumbo-v2.jpg*/}
                         <div dangerouslySetInnerHTML={{__html: about}}/>
