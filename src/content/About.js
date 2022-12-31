@@ -124,6 +124,7 @@ export const About = React.forwardRef(({}, ref) => {
     return (
         <Main ref={ref}>
             <Frame container={ref}>
+                {/**/}
                 <AboutMe dangerouslySetInnerHTML={{__html: about}} />
             </Frame>
         </Main>
