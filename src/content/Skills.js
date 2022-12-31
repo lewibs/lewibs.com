@@ -45,12 +45,19 @@ const SkillMain = styled.div`
 `;
 
 
-function Skill({icon, title, body}) {
+function Skill({icon, title, body=[]}) {
+    const [list, setList] = useState([]);
+
+    useEffect(()=>{
+        setList(body.reduce((a,b)=>a+", "+b, "").substring(2))
+    },[body])
+
+
     return (
         <SkillMain>
             <div>{icon}</div>
             <b>{title}</b>
-            <div>{body}</div>
+            <div>{list}</div>
         </SkillMain>
     );
 }
