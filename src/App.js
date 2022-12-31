@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import { Header } from "./content/Header";
+import { Home } from "./content/Home";
 
 function App() {
     const home = useRef();
@@ -10,6 +11,7 @@ function App() {
 
     return (
         <>
+            <Home/>
             <Header refs={{
                 "Lewibs": home,
                 "About Me": about,

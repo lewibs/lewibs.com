@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { Button } from "../components/Button";
 import { StickyHeader } from "../components/StickyHeader";
 import { injectStyle } from "../functions/injectStyle";
-import { dim } from "../style/dim";
 import { noPhone } from "../style/hideable";
 
 const NoPhoneButton = injectStyle(Button, noPhone);
