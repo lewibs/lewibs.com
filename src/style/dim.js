@@ -5,5 +5,6 @@ export const dim = {
         minWidth: "80px",
     },
     phone: "480px",
+    mid: "750px",
     padding: "50px"
 }

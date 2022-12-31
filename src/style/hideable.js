@@ -8,4 +8,6 @@ export function noDim(max) {
     `
 }
 
-export const noPhone =  noDim(dim.phone);
+export const noPhone = noDim(dim.phone);
+
+export const noMid = noDim(dim.mid);

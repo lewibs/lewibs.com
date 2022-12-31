@@ -7,70 +7,12 @@ import axios from "axios";
 import { useEffect } from "react";
 import { meta } from "../meta";
 import { useState } from "react";
+import { Button } from "../components/Button";
+import { noMid } from "../style/hideable";
+import { injectStyle } from "../functions/injectStyle";
 
-// #aboutMe {
-//     position: relative;
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: center;
-//     max-width: 800px;
-//     min-width: 150px;
-//     width: 80%;
-//     margin:20px auto;
-// }
-
-// #aboutMe img {
-//     height: 293px;
-//     /*transform: translate(0px, -30px);
-//     margin-bottom: -35px;*/
-// }
-
-// #aboutMe .grid {
-//     position:relative;
-//     display: grid;
-//     grid-template-areas: 'greeting greeting image' 'slogan slogan image' 'about about image' 'resume company image';
-//     z-index: 5;
-// }
-
-// #aboutMe .gridItem {
-//     margin: 10px;
-// }
-
-// #aboutMe img {
-//     grid-area: image;
-// }
-
-// #aboutMe h1 {
-//     grid-area: greeting;
-// }
-
-// #aboutMe h4 {
-//     grid-area:slogan;
-// }
-
-// #aboutMe .resume {
-//     grid-area:resume;
-//     width: 100px;
-// }
-
-// #aboutMe .company {
-//     grid-area:company;
-//     width: 100px;
-//     position: relative;
-//     right: 140px;
-// }
-
-// #aboutMe .about {
-//     grid-area: about;
-// }
-
-// @media (max-width:850px) {
-//     #aboutMe img {
-//         display: none;
-//     }
-// }
-
-const height = "293px";
+const height = "300px";
+const padding = "10px"
 
 const Main = styled.div`
     background: ${colors.primary};
@@ -80,15 +22,11 @@ const Main = styled.div`
     padding: ${dim.padding};
 `;
 
-const AboutMe = styled.div`
-
-`;
-
 const Frame = styled.div`
     position:relative;
     display: flex;
     z-index: ${z.front};
-    height: ${height};
+    height: 100%;
     width: 700px;
 
     &:before {
@@ -112,6 +50,44 @@ const Frame = styled.div`
     }
 `
 
+const Text = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: ${padding};
+
+    * {
+        padding: 0;
+        margin: 0;
+    }
+`;
+
+const Resume = styled(Button)`
+    background: ${colors.textDark};
+    color: ${colors.textLight};
+    width: ${dim.clickable.minWidth};
+`
+const AboutMe = styled.div`
+    padding: ${padding};
+    display:flex;
+
+    h4 {
+        margin: ${padding} 0;
+        color: ${colors.tertiary}
+    }
+`;
+
+let Image = styled.img`
+    position: relative;
+    top: -${padding};
+`;
+
+Image = injectStyle(Image, noMid);
+
+function gotoResume() {
+    window.location.href = meta.about.resume;
+}
+
 export const About = React.forwardRef(({}, ref) => {
     const [about, setAbout] = useState();
 
@@ -124,8 +100,16 @@ export const About = React.forwardRef(({}, ref) => {
     return (
         <Main ref={ref}>
             <Frame container={ref}>
-                {/**/}
-                <AboutMe dangerouslySetInnerHTML={{__html: about}} />
+                <AboutMe>
+                    <Text>
+                        <h2>Hey, I'm Benjamin</h2>
+                        <h4>I Make Stuff</h4>
+                        {/*https://raw.githubusercontent.com/lewibs/lewibs.com/3.0/meta/images/05onfire1_xp-superJumbo-v2.jpg*/}
+                        <div dangerouslySetInnerHTML={{__html: about}}/>
+                        <Resume onClick={gotoResume}>resume</Resume>
+                    </Text>
+                    <Image height={height} src={meta.images.me} />
+                </AboutMe>
             </Frame>
         </Main>
     );

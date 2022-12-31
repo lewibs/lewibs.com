@@ -2,7 +2,7 @@
 export const meta = {
     about: {
         body: "https://raw.githubusercontent.com/lewibs/lewibs.com/3.0/meta/about/aboutMe.html",
-        resume: "",
+        resume: "https://github.com/lewibs/lewibs.com/blob/3.0/meta/resume/benjamin_resume.pdf?raw=true",
     },
     skills: {
         web: "https://raw.githubusercontent.com/lewibs/lewibs.com/3.0/meta/skills/web.txt",
@@ -11,8 +11,8 @@ export const meta = {
     },
     projects: "https://raw.githubusercontent.com/lewibs/lewibs.com/3.0/meta/projects/meta.json",
     images: {
-        me: "",
-        icon : "",
+        me: "https://raw.githubusercontent.com/lewibs/lewibs.com/3.0/meta/images/me.PNG",
+        icon : "https://raw.githubusercontent.com/lewibs/lewibs.com/3.0/meta/images/icon.png",
     },
     three: {
         head: {
