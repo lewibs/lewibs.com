@@ -3,10 +3,10 @@ import React from "react";
 import { colors } from "../style/colors";
 import { dim } from "../style/dim";
 import { z } from "../style/z-index";
-import { useState } from "react";
-import { useEffect } from "react";
 import axios from "axios";
+import { useEffect } from "react";
 import { meta } from "../meta";
+import { useState } from "react";
 
 // #aboutMe {
 //     position: relative;
@@ -70,6 +70,8 @@ import { meta } from "../meta";
 //     }
 // }
 
+const height = "293px";
+
 const Main = styled.div`
     background: ${colors.primary};
     display: flex;
@@ -86,8 +88,8 @@ const Frame = styled.div`
     position:relative;
     display: flex;
     z-index: ${z.front};
-    height: ${props=>props.height};
-    width: 800px;
+    height: ${height};
+    width: 700px;
 
     &:before {
         content: "";
@@ -111,21 +113,18 @@ const Frame = styled.div`
 `
 
 export const About = React.forwardRef(({}, ref) => {
-    const [height, setHeight] = useState("300px");
+    const [about, setAbout] = useState();
 
     useEffect(()=>{
-        axios.get(meta.about.height).then((res)=>{
-            console.log(res.data);
-            setHeight(res.data.height);
-        });
+        axios.get(meta.about.body).then((res)=>{
+            setAbout(res.data);
+        })
     },[])
 
     return (
         <Main ref={ref}>
-            <Frame container={ref} height={height} >
-                <AboutMe>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                </AboutMe>
+            <Frame container={ref}>
+                <AboutMe dangerouslySetInnerHTML={{__html: about}} />
             </Frame>
         </Main>
     );

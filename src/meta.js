@@ -1,9 +1,8 @@
 
 export const meta = {
     about: {
-        body: "https://raw.githubusercontent.com/lewibs/lewibs.com/3.0/meta/about/aboutMe.txt",
+        body: "https://raw.githubusercontent.com/lewibs/lewibs.com/3.0/meta/about/aboutMe.html",
         resume: "",
-        height: "https://raw.githubusercontent.com/lewibs/lewibs.com/3.0/meta/about/height.json",
     },
     skills: {
         web: "https://raw.githubusercontent.com/lewibs/lewibs.com/3.0/meta/skills/web.txt",
