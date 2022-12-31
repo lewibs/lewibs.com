@@ -9,6 +9,7 @@ import { Suspense } from "react";
 import Text from "./Text";
 import Loading from "./Loading";
 import styled from "styled-components";
+import { meta } from "../meta";
 
 //these could probably be split up and made cleaner but whats the point. None of it is going to be used elsewhere at this time.
 
@@ -16,6 +17,8 @@ import styled from "styled-components";
 
 const Background = styled.div`
     background: black;
+    height: 100%;
+    width:100%;
 `;
 
 //FUNCTIONS
@@ -35,7 +38,6 @@ function squish(x, min, max) {
 }
 
 //3D STUFF
-
 function Laser({position}) {
     let multiplier = 1;
 
@@ -67,7 +69,7 @@ function LaserEyes({position}) {
 }
 
 function Suit({position, scale, callBack}) {
-    const fbx = useLoader(FBXLoader, "https://raw.githubusercontent.com/lewibs/lewibs.com/main/lewibs3.0/public/3d/suit/astronaut-helmet/source/SketchfabModel.fbx", callBack);
+    const fbx = useLoader(FBXLoader, meta.three.suit.geometry, callBack);
     return <primitive object={fbx} position={position} scale={scale} />
 }
 
@@ -133,9 +135,9 @@ function Head( {callBack} ) {
     });
 
     //THREE.DefaultLoadingManager.addHandler(/\.dds$/i, new DDSLoader());
-    const materials = useLoader(MTLLoader, "https://raw.githubusercontent.com/lewibs/lewibs.com/main/lewibs3.0/public/3d/head/head.mtl", callBack);
+    const materials = useLoader(MTLLoader, meta.three.head.texture, callBack);
     
-    const obj = useLoader(OBJLoader, "https://raw.githubusercontent.com/lewibs/lewibs.com/main/lewibs3.0/public/3d/head/head.obj", (loader) => {
+    const obj = useLoader(OBJLoader, meta.three.head.geometry, (loader) => {
         materials.preload();
         loader.setMaterials(materials);
     });

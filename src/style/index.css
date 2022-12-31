@@ -2,4 +2,21 @@ html, body {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+/*this is thescrollbar*/
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #555;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #444;
 }

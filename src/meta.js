@@ -1,5 +1,10 @@
+
 export const meta = {
-    about: "https://raw.githubusercontent.com/lewibs/lewibs.com/3.0/meta/aboutMe.txt",
+    about: {
+        body: "https://raw.githubusercontent.com/lewibs/lewibs.com/3.0/meta/about/aboutMe.txt",
+        resume: "",
+        height: "https://raw.githubusercontent.com/lewibs/lewibs.com/3.0/meta/about/height.json",
+    },
     skills: {
         web: "https://raw.githubusercontent.com/lewibs/lewibs.com/3.0/meta/skills/web.txt",
         software: "https://raw.githubusercontent.com/lewibs/lewibs.com/3.0/meta/skills/software.txt",
@@ -9,5 +14,14 @@ export const meta = {
     images: {
         me: "",
         icon : "",
+    },
+    three: {
+        head: {
+            geometry: "https://raw.githubusercontent.com/lewibs/lewibs.com/3.0/meta/3d/head/head.obj",
+            texture: "https://raw.githubusercontent.com/lewibs/lewibs.com/3.0/meta/3d/head/head.mtl",
+        },
+        suit: {
+            geometry: "https://raw.githubusercontent.com/lewibs/lewibs.com/3.0/meta/3d/suit/astronaut-helmet/source/SketchfabModel.fbx",
+        }
     }
 }
