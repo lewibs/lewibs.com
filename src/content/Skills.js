@@ -26,7 +26,7 @@ const List = styled.div`
     flex-wrap: wrap;
 `;
 
-const About = styled.div`
+const SkillAbout = styled.div`
     width : 100px;
     text-align: text-top;
 `;
@@ -38,15 +38,25 @@ const SkillMain = styled.div`
 `;
 
 const SkillTitle = styled.div`
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+`;
 
+const SkillIcon = styled.div`
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
 `;
 
 function Skill({icon, title, body}) {
     return (
         <SkillMain>
-            {icon}
+            <SkillIcon>{icon}</SkillIcon>
             <SkillTitle>{title}</SkillTitle>
-            <About>{body}</About>
+            <SkillAbout>{body}</SkillAbout>
         </SkillMain>
     );
 }
