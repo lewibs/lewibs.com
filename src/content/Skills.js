@@ -19,44 +19,38 @@ const Main = styled.div`
 
 const List = styled.div`
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
+    align-items: flex-start;
     gap: ${dim.padding};
     width: 100%;
+    flex-direction: row;
     flex-wrap: wrap;
+    max-width: ${dim.maxWidth};
 `;
 
-const SkillAbout = styled.div`
-    width : 100px;
-    text-align: text-top;
-`;
 
 const SkillMain = styled.div`
     display: flex;
     justify-content: center;
     flex-direction: column;
+    width: 200px;
+    gap: 10px;
+
+    * {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
 `;
 
-const SkillTitle = styled.div`
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-`;
-
-const SkillIcon = styled.div`
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-`;
 
 function Skill({icon, title, body}) {
     return (
         <SkillMain>
-            <SkillIcon>{icon}</SkillIcon>
-            <SkillTitle>{title}</SkillTitle>
-            <SkillAbout>{body}</SkillAbout>
+            <div>{icon}</div>
+            <b>{title}</b>
+            <div>{body}</div>
         </SkillMain>
     );
 }
@@ -91,7 +85,7 @@ export const Skills = React.forwardRef(({}, ref) => {
                     body = {web}
                 />
                 <Skill 
-                    icon={<Icon type={"FiTerminal"}/>}
+                    icon={<Icon type={"FiMonitor"}/>}
                     title = "Backend"
                     body = {backend}
                 />

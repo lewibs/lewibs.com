@@ -28,7 +28,7 @@ const Frame = styled.div`
     display: flex;
     z-index: ${z.front};
     height: 100%;
-    width: 700px;
+    width: ${dim.maxWidth};
 
     &:before {
         content: "";
