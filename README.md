@@ -12,9 +12,9 @@ This is a personal website which I use to show of stuff that ive done in a funwa
     used to start the program and run it on localhost:3000
 
 # TODO
-* head shoud be fixed behind everything so that screen does not jump
 * contacts
 * projects
 * reduce skills
-* update resume
+* update resume to be the one on cpanel
 * make skill list pretty
+* header should be sticky

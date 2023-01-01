@@ -22,15 +22,11 @@ const Empty = styled.div`
 export const Home = React.forwardRef(({goto}, ref) => {
     return(
         <>
-            <Empty/>
-            <Main
-                ref={ref}
-            >
-                <Me/>
-            </Main>
+            <Empty ref={ref}/>
             <More onClick={()=>{
                 goto.current.scrollIntoView();
             }}/>
+            <Main><Me/></Main>
         </>
     );
 })

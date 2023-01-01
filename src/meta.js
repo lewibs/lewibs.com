@@ -3,11 +3,7 @@ export const meta = {
         body: "https://raw.githubusercontent.com/lewibs/lewibs.com/3.0/meta/about/aboutMe.html",
         resume: "https://github.com/lewibs/lewibs.com/blob/3.0/meta/resume/benjamin_resume.pdf?raw=true",
     },
-    skills: {
-        web: "https://raw.githubusercontent.com/lewibs/lewibs.com/3.0/meta/skills/web.json",
-        backend: "https://raw.githubusercontent.com/lewibs/lewibs.com/3.0/meta/skills/backend.json",
-        languages: "https://raw.githubusercontent.com/lewibs/lewibs.com/3.0/meta/skills/languages.json"
-    },
+    skills: "https://raw.githubusercontent.com/lewibs/lewibs.com/3.0/meta/skills.json",
     projects: "https://raw.githubusercontent.com/lewibs/lewibs.com/3.0/meta/projects/meta.json",
     images: {
         me: "https://raw.githubusercontent.com/lewibs/lewibs.com/3.0/meta/images/me.PNG",
@@ -23,5 +19,5 @@ export const meta = {
         }
     },
     contact: "", 
-    quote: "https://raw.githubusercontent.com/lewibs/lewibs.com/3.0/meta/quote/quotes.json",
+    quote: "https://raw.githubusercontent.com/lewibs/lewibs.com/3.0/meta/quotes.json",
 }

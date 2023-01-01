@@ -5,7 +5,9 @@ import { dim } from "../style/dim";
 import { useEffect } from "react";
 import { useState } from "react";
 import axios from "axios";
-
+import { meta } from "../meta";
+import { getRandom } from "../functions/array";
+import { BoundingBox } from "../components/BoundingBox";
 
 const Main = styled.div`
     background: ${colors.tertiary};
@@ -25,6 +27,7 @@ const Info = styled.div`
 `;
 
 const Final = styled.div`
+    width: 100%;
 `;
 
 export const Contact = React.forwardRef(({}, ref) => {
@@ -32,17 +35,26 @@ export const Contact = React.forwardRef(({}, ref) => {
     const [author, setAuthor] = useState();
 
     useEffect(()=>{
-        axios.get();
+        axios.get(meta.quote).then((res)=>{
+            let data = getRandom(res.data);
+            setQuote(data.quote);
+            setAuthor(data.author);
+        });
     },[]);
 
     return (
         <Main ref={ref}>
-            <Quote>
-                <h2><q>It is possible to commit no mistakes and still lose. That is not weakness, that is life.</q></h2>
-                <h4>- Jean-Luc Picard</h4>
-            </Quote>
-            <Info>asdf</Info>
-            <Final>asdf</Final>
+            <BoundingBox>
+                <Quote>
+                    <h2><q>{quote}</q></h2>
+                    <h4>- {author}</h4>
+                </Quote>
+                <Info>asdf</Info>
+                <Final>
+                    <hr/>
+                    asdf
+                </Final>
+            </BoundingBox>
         </Main>
     );
 });

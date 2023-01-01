@@ -6,6 +6,7 @@ import { Title } from "../components/Title";
 import {Icon} from "../components/Icon";
 import axios from "axios";
 import {meta} from "../meta";
+import { BoundingBox } from "../components/BoundingBox";
 
 const Main = styled.div`
     background: ${colors.secondary};
@@ -25,7 +26,6 @@ const List = styled.div`
     width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
-    max-width: ${dim.maxWidth};
 `;
 
 
@@ -68,61 +68,36 @@ export const Skills = React.forwardRef(({}, ref) => {
     const [languages, setLanguages] = useState();
 
     useEffect(()=>{
-        axios.get(meta.skills.web).then((res)=>{
-            setWeb(res.data);
-        });
-
-        axios.get(meta.skills.backend).then((res)=>{
-            setBackend(res.data);
-        });
-
-        axios.get(meta.skills.languages).then((res)=>{
-            setLanguages(res.data);
+        axios.get(meta.skills).then((res)=>{
+            setWeb(res.data.web);
+            setBackend(res.data.backend);
+            setLanguages(res.data.languages);
         });
     }, []);
 
 
     return (
         <Main ref={ref}>
-            <Title>Skills and Expertise</Title>
-            <List>
-                <Skill 
-                    icon={<Icon type={"VscCode"}/>}
-                    title = "Web/App"
-                    body = {web}
-                />
-                <Skill 
-                    icon={<Icon type={"FiMonitor"}/>}
-                    title = "Backend"
-                    body = {backend}
-                />
-                <Skill 
-                    icon={<Icon type={"FiMessageSquare"}/>}
-                    title = "Languages"
-                    body = {languages}
-                />
-            </List>
+            <BoundingBox>
+                <Title>Skills and Expertise</Title>
+                <List>
+                    <Skill 
+                        icon={<Icon type={"VscCode"}/>}
+                        title = "Web/App"
+                        body = {web}
+                    />
+                    <Skill 
+                        icon={<Icon type={"FiMonitor"}/>}
+                        title = "Backend"
+                        body = {backend}
+                    />
+                    <Skill 
+                        icon={<Icon type={"FiMessageSquare"}/>}
+                        title = "Languages"
+                        body = {languages}
+                    />
+                </List>
+            </BoundingBox>
         </Main>
     );
 });
-
-
-{/* <div id="skillbar">
-                <span className='skill'>
-                    <Icon type={"FiTerminal"}/>
-                    <h4>Web/App Development</h4>
-                    <div>React, axios, potree, three.js, IFC.js, potree, nativescript jquery, styled-components, html/css</div>
-                </span>
-
-                <span className='skill'>
-                    <i className="fa fa-tv color1"></i>
-                    <h4>Software Development</h4>
-                    <div>AWS, cPanel, Spring, eclipse, Mongoose, Nestjs, linux, mongoDB, gin, node, OOP, functional, SQL, Spring, Hibernate</div>
-                </span>
-
-                <span className='skill'>
-                    <i className="fa fa-pencil"></i>
-                    <h4>Languages</h4>
-                    <div>javascript, typescript, golang, python, java, c, assembly, shell, MATLAB, haskell, php</div>
-                </span>
-            </div> */}
