@@ -7,5 +7,5 @@ export const dim = {
     maxWidth: "700px",
     phone: "480px",
     mid: "750px",
-    padding: "50px"
+    padding: "30px"
 }
