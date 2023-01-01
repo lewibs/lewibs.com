@@ -18,6 +18,6 @@ export const meta = {
             geometry: "https://raw.githubusercontent.com/lewibs/lewibs.com/3.0/meta/3d/suit/astronaut-helmet/source/SketchfabModel.fbx",
         }
     },
-    contact: "", 
+    contact: "https://raw.githubusercontent.com/lewibs/lewibs.com/3.0/meta/contact.json", 
     quote: "https://raw.githubusercontent.com/lewibs/lewibs.com/3.0/meta/quotes.json",
 }

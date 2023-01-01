@@ -24,15 +24,42 @@ const Quote = styled.div`
 `;
 
 const Info = styled.div`
+    display: flex;
+    justify-content: space-between;
 `;
+
+const Left = styled.div`
+    text-align: left;
+`;
+
+const Right = styled.div`
+    text-align: right;
+`;
+
+const Name = styled.div`
+`;
+
+const Media = styled.div`
+`;
+
+const ContactField = styled.div``;
 
 const Final = styled.div`
     width: 100%;
+    div {
+        margin-top: ${dim.padding};
+    }
 `;
 
 export const Contact = React.forwardRef(({}, ref) => {
     const [quote, setQuote] = useState();
     const [author, setAuthor] = useState();
+    const [phone, setPhone] = useState();
+    const [email, setEmail] = useState();
+    const [insta, setInsta] = useState();
+    const [github, setGithub] = useState();
+    const [spotify, setSpotify] = useState();
+    const [linkedin, setLinkedin] = useState();
 
     useEffect(()=>{
         axios.get(meta.quote).then((res)=>{
@@ -40,7 +67,18 @@ export const Contact = React.forwardRef(({}, ref) => {
             setQuote(data.quote);
             setAuthor(data.author);
         });
+
+        axios.get(meta.contact).then((res)=>{
+            setPhone(res.data.phone);
+            setEmail(res.data.email);
+            setInsta(res.data.insta);
+            setGithub(res.data.github);
+            setSpotify(res.data.spotify);
+            setLinkedin(res.data.linkedin);
+        })
     },[]);
+
+    console.log(phone,email,insta,github,spotify,linkedin);
 
     return (
         <Main ref={ref}>
@@ -49,10 +87,23 @@ export const Contact = React.forwardRef(({}, ref) => {
                     <h2><q>{quote}</q></h2>
                     <h4>- {author}</h4>
                 </Quote>
-                <Info>asdf</Info>
+                <Info>
+                    <Left>
+                        <Name>BENJAMIN</Name>
+                        <Media>
+                            asdf
+                        </Media>
+                    </Left>
+                    <Right>
+                        <ContactField>phone</ContactField>
+                        <ContactField>email</ContactField>
+                    </Right>
+                </Info>
                 <Final>
                     <hr/>
-                    asdf
+                    <div>
+                        ok you can go now
+                    </div>
                 </Final>
             </BoundingBox>
         </Main>
