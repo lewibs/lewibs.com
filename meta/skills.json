@@ -1,0 +1,43 @@
+{
+    "web": [
+        "React",
+        "axios",
+        "potree",
+        "three.js",
+        "ifc.js",
+        "nativescript",
+        "jquery",
+        "styled-components",
+        "html/css"
+    ],
+    "languages":[
+        "javascript",
+        "typescript", 
+        "golang", 
+        "python", 
+        "java", 
+        "c", 
+        "assembly", 
+        "shell", 
+        "MATLAB", 
+        "haskell", 
+        "php"
+    ],
+    "backend": [
+        "AWS", 
+        "cPanel",
+        "Spring", 
+        "eclipse", 
+        "Mongoose",
+        "Nestjs",
+        "linux",
+        "mongoDB",
+        "gin",
+        "node",
+        "OOP",
+        "functional",
+        "SQL",
+        "Spring",
+        "Hibernate"
+    ]
+}

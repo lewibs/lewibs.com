@@ -1,4 +1,3 @@
-
 export const meta = {
     about: {
         body: "https://raw.githubusercontent.com/lewibs/lewibs.com/3.0/meta/about/aboutMe.html",
@@ -22,5 +21,7 @@ export const meta = {
         suit: {
             geometry: "https://raw.githubusercontent.com/lewibs/lewibs.com/3.0/meta/3d/suit/astronaut-helmet/source/SketchfabModel.fbx",
         }
-    }
+    },
+    contact: "", 
+    quote: "https://raw.githubusercontent.com/lewibs/lewibs.com/3.0/meta/quote/quotes.json",
 }
