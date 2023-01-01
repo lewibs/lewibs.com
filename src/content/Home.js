@@ -8,15 +8,29 @@ const Main = styled.div`
     height: 100vh;
     width: 100vw;
     z-index: ${z.wayBack};
+    position: fixed;
+    top: 0;
+`;
+
+const Empty = styled.div`
+    height: 100vh;
+    width: 100vw;
+    background: green;
+    opacity: 0;
 `;
 
 export const Home = React.forwardRef(({goto}, ref) => {
-    return <Main
-        ref={ref}
-    >
-        <Me/>
-        <More onClick={()=>{
-            goto.current.scrollIntoView();
-        }}/>
-    </Main>
+    return(
+        <>
+            <Empty/>
+            <Main
+                ref={ref}
+            >
+                <Me/>
+            </Main>
+            <More onClick={()=>{
+                goto.current.scrollIntoView();
+            }}/>
+        </>
+    );
 })
