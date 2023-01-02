@@ -81,6 +81,12 @@ const PointAt = styled.div`
     }
 `
 
+const NoPhone = styled.div`
+    @media(max-width: ${dim.phone}) {
+        display: none;
+    }
+`;
+
 function makeGoto(link) {
     return ()=>{
         window.location.href = link;
@@ -132,8 +138,8 @@ export const Contact = React.forwardRef(({}, ref) => {
                         </Media>
                     </Left>
                     <Right>
-                        <ContactField>{phone} <Icon type={"FiPhone"} size={iconSize} /></ContactField>
-                        <ContactField>{email} <Icon type={"FiAtSign"} size={iconSize} /></ContactField>
+                        <ContactField>{phone} <NoPhone><Icon type={"FiPhone"} size={iconSize} /></NoPhone></ContactField>
+                        <ContactField>{email} <NoPhone><Icon type={"FiAtSign"} size={iconSize} /></NoPhone></ContactField>
                     </Right>
                 </Info>
                 <Final>

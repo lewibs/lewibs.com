@@ -8,11 +8,13 @@ import { meta } from "../meta";
 import { BoundingBox } from "../components/BoundingBox";
 import { useRef } from "react";
 import {Title} from "../components/Title";
+import {z} from "../style/z-index";
 
 const PageHeight = 250;
 const ButtonHeight = 25;
 const animationDist = window.innerWidth;
-const animation = "0.5s 1 ease-in forwards";
+const imgAnimation = "0.8s 1 ease-in forwards";
+const aboutAnimation = "0.3s 1 forwards";
 
 const Main = styled.div`
     background: ${colors.primary};
@@ -25,6 +27,7 @@ const Main = styled.div`
 const Frame = styled.div`
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 0 ${isPhone() ? 0 : "100px"};
     height: ${props=>props.height};
 
@@ -35,6 +38,15 @@ const Frame = styled.div`
     }}
 `;
 
+const aboutFrame = keyframes`
+    from {
+        clip-path: inset(0 100%);
+    }
+    to {
+        clip-path: inset(0 0);
+    }
+`;
+
 const About = styled.div`
     width: 100%;
     max-width: ${dim.maxWidth};
@@ -42,6 +54,12 @@ const About = styled.div`
     display:flex;
     flex-direction: column;
     gap: 10px;
+
+    clip-path: inset(0 100%);
+    animation: ${aboutFrame} ${aboutAnimation};
+    -webkit-animation: ${aboutFrame} ${aboutAnimation};
+    -moz-animation: ${aboutFrame} ${aboutAnimation};
+    -o-animation: ${aboutFrame} ${aboutAnimation};
 `;
 
 const More = styled.div`
@@ -60,40 +78,32 @@ const ImgC = styled.div`
     position: absolute;
 `;
 
-const Curtain = styled.div`
-    width: 100vw;
-    background: red;
-`;
-
 const Img = styled.img`
     position: relative;
-`;
-
-const CurtainR = styled(Curtain)`
-    -webkit-animation: ${keyframe("right", 0, animationDist)} ${animation};
-    -moz-animation: ${keyframe("right", 0, animationDist)} ${animation};
-    -o-animation: ${keyframe("right", 0, animationDist)} ${animation};
-`;
-
-const CurtainL = styled(Curtain)`
-    -webkit-animation: ${keyframe("left", 0, animationDist)} ${animation};
-    -moz-animation: ${keyframe("left", 0, animationDist)} ${animation};
-    -o-animation: ${keyframe("left", 0, animationDist)} ${animation};
+    background: ${colors.primary};
+    z-index: ${z.front};
 `;
 
 const ImgR = styled(Img)`
     clip-path: polygon(0% 100%, 100% 100%, 100% 0);
+    animation: ${slideFrame("right", 0, animationDist)} ${imgAnimation};
+    -webkit-animation: ${slideFrame("right", 0, animationDist)} ${imgAnimation};
+    -moz-animation: ${slideFrame("right", 0, animationDist)} ${imgAnimation};
+    -o-animation: ${slideFrame("right", 0, animationDist)} ${imgAnimation};
 `;
 
 const ImgL = styled(Img)`
     clip-path: polygon(0 0, 0 100%, 100% 0);
+    -webkit-animation: ${slideFrame("left", 0, animationDist)} ${imgAnimation};
+    -moz-animation: ${slideFrame("left", 0, animationDist)} ${imgAnimation};
+    -o-animation: ${slideFrame("left", 0, animationDist)} ${imgAnimation};
 `
 
 function isPhone() {
     return window.innerWidth <= +dim.phone.replace("px", "")
 }
 
-function keyframe(dir, from, to) {
+function slideFrame(dir, from, to) {
     let trans = to;
 
     if (dir==="left") {
@@ -171,12 +181,11 @@ function Project({title, image, info, link, last, id}) {
                         height={height + "px"}
                     >
                         <ImgC>
-                            <CurtainL>
-                                <ImgL
-                                    height={height + "px"}
-                                    src={image}
-                                />
-                            </CurtainL>
+                            <ImgL
+                                translate={imw}
+                                height={height + "px"}
+                                src={image}
+                            />
                         </ImgC>
                         <About
                             ref={aboutRef}
@@ -190,12 +199,11 @@ function Project({title, image, info, link, last, id}) {
                             </More>
                         </About>
                         <ImgC>
-                            <CurtainR>
-                                <ImgR
-                                    height={height + "px"}
-                                    src={image}
-                                />
-                            </CurtainR>
+                            <ImgR
+                                translate={imw}
+                                height={height + "px"}
+                                src={image}
+                            />
                         </ImgC>
                     </Frame>
                 </>
