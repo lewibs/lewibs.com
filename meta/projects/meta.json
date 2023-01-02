@@ -1,0 +1,68 @@
+[
+    {
+        "image": "https://raw.githubusercontent.com/lewibs/guarded-components/main/images/guard.PNG",
+        "title": "guarded-components",
+        "link": "https://www.npmjs.com/package/guarded-components",
+        "info": "This is used to protect pages or components such as buttons based on the user's state. It seems that this is a common problem in industry and there are no packages that I am aware of which work for most jsx compatible frameworks with any authorization strategies. This package allows the user to take control of this problem by simply defining strategies based on contracts which they determine."
+    },
+    {
+        "image" : "https://raw.githubusercontent.com/lewibs/lewibs.com/3.0/meta/projects/images/duckscript.png",
+        "title" : "ducktyper",
+        "link" : "https://github.com/lewibs/ducktyper",
+        "info" : "This is a project that allows type checking in javascript without needing to add typscript."
+    },
+    {
+        "image" : "https://raw.githubusercontent.com/lewibs/lewibs.com/3.0/meta/projects/images/blackeye.png",
+        "title" : "metamadness",
+        "link" : "https://github.com/lewibs/metamadness",
+        "info" : "Metamadness is my own varient of black eye. Rather then only making a phishing attack, this also updates the meta tags to appear as it's going to a specific link."
+    },
+    {
+        "image" : "https://codestoresolutions.com/wp-content/uploads/2020/03/testing.png",
+        "title" : "usability-tracker",
+        "link" : "https://www.npmjs.com/package/usability-tracker",
+        "info" : "While reading the book, Don't Make Me Think, I was hit with this idea. It is a program that tracks the user movment and actions and allows saving them and playing them back."
+    },
+    {
+        "image" : "https://raw.githubusercontent.com/lewibs/lewibs.com/3.0/meta/projects/images/eventador.png",
+        "title" : "eventador",
+        "link" : "https://www.npmjs.com/package/eventador",
+        "info" : "This project seamlessly allows you to make your events more robust and usable. This is done while maintaining standard js syntax and backwards compatibility."
+    },
+    {
+        "image" : "https://raw.githubusercontent.com/lewibs/lewibs.com/3.0/meta/projects/images/wackamon.PNG",
+        "title" : "Wackamon",
+        "link" : "http://wackamon.lewibs.com/",
+        "info" : "Wack-A-Mon implements the use of a FSM. This is used to simplify the code and make the program smoother. Additionally, it implements ajax to include a highscore list."
+    },
+    {
+        "image" : "https://raw.githubusercontent.com/lewibs/lewibs.com/3.0/meta/projects/images/keylogger.png",
+        "title" : "lewibs-keylogger",
+        "link" : "https://www.npmjs.com/package/lewibs-keylogger",
+        "info" : "This keylogger was created to help save development time when the users actions needed to be verified or logged."
+    },
+    {
+        "image" : "https://raw.githubusercontent.com/lewibs/lewibs.com/3.0/meta/projects/images/ticTacToe.PNG",
+        "title" : "Tic-Tac-Toe",
+        "link" : "https://github.com/lewibs/tic-tac-toe",
+        "info" : "This was made for a matlab TA interview. It was not intended to involve machine learning, but now that has been implemented, and the program uses past games to improve upon itself."
+    },
+    {
+        "image" : "https://raw.githubusercontent.com/lewibs/lewibs.com/3.0/meta/projects/images/clueSheet.PNG",
+        "title" : "Sheet-O-Matic",
+        "link" : "http://cluesheet.lewibs.com/",
+        "info" : "This game gives you an unfair advantage in CLUE as it looks back through past guesses and uses logic to determine who did the crime."
+    },
+    {
+        "image" : "https://raw.githubusercontent.com/lewibs/lewibs.com/3.0/meta/projects/images/movieNightEtc.PNG",
+        "title" : "Movie Night Etc.",
+        "link" : "http://movienightetc.lewibs.com/",
+        "info" : "Movie Night Etc was part of an elaborate joke to make a blog. I taught myself PHP to make this website. This website is what introduced me to web development."
+    },
+    {
+        "image" : "https://raw.githubusercontent.com/lewibs/lewibs.com/3.0/meta/projects/images/wisdomDog.PNG",
+        "title" : "Wisdom Dog",
+        "link" : "http://wisdomdog.lewibs.com/",
+        "info" : "I made the wisdom dog to experiment with interactive websites and see how babble works. It was my first website using the basics."
+    }
+]

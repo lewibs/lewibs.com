@@ -1,6 +1,18 @@
-# lewibs.com
-This is my personal website feel free to check it out at lewibs.com
+# this is lewibs.com
+This is a personal website which I use to show of stuff that ive done in a funway that hopefully gives everyone who looks at it a marginally better day : )
 
-the current branch is 3.0.
+# scripts
+### npm install
+    used to install all needed dependencies
 
-(the code is bad i am aware plz dont hurt me this was like my first website and updating it to be good is too time consuming to be worth it. I acctually really hate updating this website... I should redo it...)
+### npm run build
+    used to build the program into a static build folder
+
+### npm start
+    used to start the program and run it on localhost:3000
+
+# TODO
+* reduce projects
+* reduce skills
+* update resume to be the one on cpanel
+* make skill list pretty
