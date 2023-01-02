@@ -26,6 +26,7 @@ const Frame = styled.div`
     display: flex;
     justify-content: center;
     padding: 0 ${isPhone() ? 0 : "100px"};
+    height: ${props=>props.height};
 
     ${({clickable})=>{
         if (clickable) {
@@ -38,40 +39,72 @@ const About = styled.div`
     width: 100%;
     max-width: ${dim.maxWidth};
     text-align: left;
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+`;
+
+const More = styled.div`
+    cursor: pointer;
+    color: ${colors.tertiaryDark};
+
 `;
 
 const ProjectTitle = styled.div`
-    text-align:center;
     font-weight: bold;
     font-size: 1.3em;
-    padding-bottom: 5px;
+    padding: 5px 0;
 `;
 
 const ImgC = styled.div`
     position: absolute;
 `;
 
+const Curtain = styled.div`
+    width: 100vw;
+    background: red;
+`;
+
 const Img = styled.img`
     position: relative;
-    background: white;
 `;
+
+const CurtainR = styled(Curtain)`
+    -webkit-animation: ${keyframe("right", 0, animationDist)} ${animation};
+    -moz-animation: ${keyframe("right", 0, animationDist)} ${animation};
+    -o-animation: ${keyframe("right", 0, animationDist)} ${animation};
+`;
+
+const CurtainL = styled(Curtain)`
+    -webkit-animation: ${keyframe("left", 0, animationDist)} ${animation};
+    -moz-animation: ${keyframe("left", 0, animationDist)} ${animation};
+    -o-animation: ${keyframe("left", 0, animationDist)} ${animation};
+`;
+
+const ImgR = styled(Img)`
+    clip-path: polygon(0% 100%, 100% 100%, 100% 0);
+`;
+
+const ImgL = styled(Img)`
+    clip-path: polygon(0 0, 0 100%, 100% 0);
+`
 
 function isPhone() {
     return window.innerWidth <= +dim.phone.replace("px", "")
 }
 
-function keyframe(dir, dist) {
-    let trans = dist;
+function keyframe(dir, from, to) {
+    let trans = to;
 
     if (dir==="left") {
-        trans = "-" + dist + "px";
+        trans = "-" + to + "px";
     } else if (dir==="right") {
-        trans = dist + "px";
+        trans = to + "px";
     }
 
     return keyframes`
         from {
-            transform: translate(0px);
+            transform: translate(${from}px);
         }
 
         to {
@@ -80,18 +113,7 @@ function keyframe(dir, dist) {
     `;
 }
 
-const ImgR = styled(Img)`
-    clip-path: polygon(0% 100%, 100% 100%, 100% 0);
-
-    animation: ${keyframe("right", animationDist)} ${animation};
-`;
-
-const ImgL = styled(Img)`
-    clip-path: polygon(0 0, 0 100%, 100% 0);
-    animation: ${keyframe("left", animationDist)} ${animation};
-`;
-
-function Project({title, image, info, date, link, last, id}) {
+function Project({title, image, info, link, last, id}) {
     const frameRef = useRef();
     const aboutRef = useRef();
     const imgRef = useRef();
@@ -141,47 +163,58 @@ function Project({title, image, info, date, link, last, id}) {
 
     return(
         <div>
-            <ProjectTitle>
-                {title} {date}
-            </ProjectTitle>
             {(hover)
                 ?<>
                     <Frame 
                         clickable={false}
                         ref={frameRef}
-                        {...attachActions(hover)}
+                        height={height + "px"}
                     >
                         <ImgC>
-                            <ImgL
-                                height={height + "px"}
-                                src={image}
-                            />
+                            <CurtainL>
+                                <ImgL
+                                    height={height + "px"}
+                                    src={image}
+                                />
+                            </CurtainL>
                         </ImgC>
                         <About
                             ref={aboutRef}
                         >
+                            <ProjectTitle>{title}</ProjectTitle>
                             {info}
+                            <More 
+                                onClick={()=>window.location.href = link}
+                            >
+                                click for more &#xbb;
+                            </More>
                         </About>
                         <ImgC>
-                            <ImgR
-                                height={height + "px"}
-                                src={image}
-                            />
+                            <CurtainR>
+                                <ImgR
+                                    height={height + "px"}
+                                    src={image}
+                                />
+                            </CurtainR>
                         </ImgC>
                     </Frame>
                 </>
-                :<Frame 
-                    clickable={true}
-                    ref={frameRef}
-                >
-                    <Img 
-                        ref={imgRef}
-                        imw={imw}
+                :<>
+                    <Frame 
+                        clickable={true}
+                        ref={frameRef}
                         height={height + "px"}
-                        src={image}
-                        {...attachActions(hover)}
-                    />
-                </Frame>
+                    >
+                        <Img 
+                            ref={imgRef}
+                            imw={imw}
+                            height={height + "px"}
+                            src={image}
+                            {...attachActions(hover)}
+                        />
+                    </Frame>
+                    <ProjectTitle>{title}</ProjectTitle>
+                </>
             }
         </div>
     );
@@ -226,10 +259,9 @@ export const Projects = React.forwardRef(({}, ref) => {
                         last={last}
                         key={i}
                         title={project.title}
-                        date={project.date}
                         image={project.image}
                         info={project.info}
-                        link={project.info}
+                        link={project.link}
                     />)}
                 </Carousel>
             </BoundingBox>

@@ -123,7 +123,7 @@ export const Contact = React.forwardRef(({}, ref) => {
                 </Quote>
                 <Info>
                     <Left>
-                        <Name>BENJAMIN</Name>
+                        <Name>LEWIBS</Name>
                         <Media>
                             <PointAt><Icon type={"BsGithub"} onClick={makeGoto(github)} size={iconSize}/></PointAt>
                             <PointAt><Icon type={"BsInstagram"} onClick={makeGoto(insta)} size={iconSize} /></PointAt>
@@ -132,8 +132,8 @@ export const Contact = React.forwardRef(({}, ref) => {
                         </Media>
                     </Left>
                     <Right>
-                        <ContactField>{email} <Icon type={"FiAtSign"} size={iconSize} /></ContactField>
                         <ContactField>{phone} <Icon type={"FiPhone"} size={iconSize} /></ContactField>
+                        <ContactField>{email} <Icon type={"FiAtSign"} size={iconSize} /></ContactField>
                     </Right>
                 </Info>
                 <Final>
