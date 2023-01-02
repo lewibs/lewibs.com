@@ -4,6 +4,7 @@ import { Button } from "../components/Button";
 import { StickyHeader } from "../components/StickyHeader";
 import { injectStyle } from "../functions/injectStyle";
 import { noPhone } from "../style/hideable";
+import { colors } from "../style/colors";
 
 const NoPhoneButton = injectStyle(Button, noPhone);
 

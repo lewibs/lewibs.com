@@ -14,8 +14,6 @@ const Main = styled.div`
 
 const Empty = styled.div`
     height: 100vh;
-    width: 100vw;
-    background: green;
     opacity: 0;
 `;
 

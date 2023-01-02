@@ -16,4 +16,3 @@ This is a personal website which I use to show of stuff that ive done in a funwa
 * reduce skills
 * update resume to be the one on cpanel
 * make skill list pretty
-* header should be sticky
