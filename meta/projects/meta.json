@@ -24,12 +24,6 @@
         "info" : "This was made for a matlab TA interview. It was not intended to involve machine learning, but now that has been implemented, and the program uses past games to improve upon itself."
     },
     {
-        "image" : "https://raw.githubusercontent.com/ottery-app/global-data/main/images/logos/Ottery_logo.png",
-        "title" : "oui",
-        "link" : "https://www.npmjs.com/package/ottery-ui",
-        "info" : "Oui is the opensource ux framework, that I designed for ottery, a very large team project which I lead. Used for handling orginizations' security needs."
-    },
-    {
         "image" : "https://raw.githubusercontent.com/lewibs/lewibs.com/3.0/meta/projects/images/clueSheet.PNG",
         "title" : "Sheet-O-Matic",
         "link" : "http://cluesheet.lewibs.com/",

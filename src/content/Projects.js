@@ -6,8 +6,9 @@ import Carousel from 'react-material-ui-carousel'
 import axios from "axios";
 import { meta } from "../meta";
 import { BoundingBox } from "../components/BoundingBox";
+import { useRef } from "react";
 
-const PageHeight = 150;
+const PageHeight = 200;
 
 const Main = styled.div`
     background: ${colors.primary};
@@ -18,29 +19,58 @@ const Main = styled.div`
 `;
 
 const Frame = styled.div`
-    
+    display: flex;
 `;
+
+const About = styled.div`
+    text-align: left;
+    padding: 10px 0px 10px 10px;
+`;
+
+const Title = styled.div`
+    text-align:center;
+    font-weight: bold;
+    font-size: 1.3em;
+    padding-bottom: 5px;
+`;
+
+const Bod = styled.div``;
 
 const Img = styled.img`
-    clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+    background: white;
 `;
 
+const ImgR = styled(Img)`clip-path: polygon(0% 100%, 100% 100%, 100% 0);`;
+const ImgL = styled(Img)`clip-path: polygon(0 0, 0 100%, 100% 0);`;
+
 function Project({title, image, info, link}) {
+    const that = useRef();
+    const [height, setHeight] = useState(PageHeight);
+
+
+    useEffect(()=>{
+        setHeight(that.current.clientHeight);
+    },[that]);
+
     return(
-        <Frame>
-            <div>
-                {title}
-            </div>
-            <div>
-                {info}
-            </div>
-            <Img height={PageHeight + "px"} src={image}/>
+        <Frame ref={that}>
+            <ImgL height={height + "px"} src={image}/>
+            <About>
+                <Title>
+                    {title}
+                </Title>
+                <Bod>
+                    {info}
+                </Bod>
+            </About>
+            <ImgR height={height + "px"} src={image}/>
         </Frame>
     );
 }
 
 export const Projects = React.forwardRef(({}, ref) => {
     const [projects, setProjects] = useState([]);
+    const pageRef = useRef();
 
     useEffect(()=>{
         axios.get(meta.projects).then((res)=>{
@@ -59,7 +89,8 @@ export const Projects = React.forwardRef(({}, ref) => {
                     cycleNavigation
                     height={PageHeight}
                 >
-                    {projects.map(project=><Project 
+                    {projects.map((project,i)=><Project
+                        key={i}
                         title={project.title}
                         image={project.image}
                         info={project.info}
