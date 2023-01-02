@@ -64,7 +64,7 @@ const About = styled.div`
 
 const More = styled.div`
     cursor: pointer;
-    color: ${colors.tertiaryDark};
+    color: ${colors.secondary};
 `;
 
 const ProjectTitle = styled.div`
