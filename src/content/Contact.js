@@ -126,7 +126,7 @@ function makeGoto(link) {
     };
 }
 
-export const Contact = React.forwardRef(({}, ref) => {
+export const Contact = React.forwardRef((props, ref) => {
     const [quote, setQuote] = useState();
     const [author, setAuthor] = useState();
     const [phone, setPhone] = useState();
