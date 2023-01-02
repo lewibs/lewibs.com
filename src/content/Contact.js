@@ -8,6 +8,9 @@ import axios from "axios";
 import { meta } from "../meta";
 import { getRandom } from "../functions/array";
 import { BoundingBox } from "../components/BoundingBox";
+import { Icon } from "../components/Icon";
+
+const iconSize = 30;
 
 const Main = styled.div`
     background: ${colors.tertiary};
@@ -28,21 +31,42 @@ const Info = styled.div`
     justify-content: space-between;
 `;
 
-const Left = styled.div`
+const InfoSegment = styled.div`
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2px;
+`;
+
+const Left = styled(InfoSegment)`
     text-align: left;
 `;
 
-const Right = styled.div`
+//this will likely cause issues on minor alignment things
+const Right = styled(InfoSegment)`
     text-align: right;
+    align-items: end;
+    position: relative;
+    top: 5px;
 `;
 
 const Name = styled.div`
+    font-family: arial;
+    font-weight: bold;
+    font-size: ${iconSize}px;
 `;
 
 const Media = styled.div`
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
 `;
 
-const ContactField = styled.div``;
+const ContactField = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`;
 
 const Final = styled.div`
     width: 100%;
@@ -50,6 +74,18 @@ const Final = styled.div`
         margin-top: ${dim.padding};
     }
 `;
+
+const PointAt = styled.div`
+    &:hover{
+        cursor: pointer;
+    }
+`
+
+function makeGoto(link) {
+    return ()=>{
+        window.location.href = link;
+    };
+}
 
 export const Contact = React.forwardRef(({}, ref) => {
     const [quote, setQuote] = useState();
@@ -78,8 +114,6 @@ export const Contact = React.forwardRef(({}, ref) => {
         })
     },[]);
 
-    console.log(phone,email,insta,github,spotify,linkedin);
-
     return (
         <Main ref={ref}>
             <BoundingBox>
@@ -91,12 +125,15 @@ export const Contact = React.forwardRef(({}, ref) => {
                     <Left>
                         <Name>BENJAMIN</Name>
                         <Media>
-                            asdf
+                            <PointAt><Icon type={"BsGithub"} onClick={makeGoto(github)} size={iconSize}/></PointAt>
+                            <PointAt><Icon type={"BsInstagram"} onClick={makeGoto(insta)} size={iconSize} /></PointAt>
+                            <PointAt><Icon type={"BsSpotify"} onClick={makeGoto(spotify)} size={iconSize} /></PointAt>
+                            <PointAt><Icon type={"BsLinkedin"} onClick={makeGoto(linkedin)} size={iconSize} /></PointAt>
                         </Media>
                     </Left>
                     <Right>
-                        <ContactField>phone</ContactField>
-                        <ContactField>email</ContactField>
+                        <ContactField>{email} <Icon type={"FiAtSign"} size={iconSize} /></ContactField>
+                        <ContactField>{phone} <Icon type={"FiPhone"} size={iconSize} /></ContactField>
                     </Right>
                 </Info>
                 <Final>

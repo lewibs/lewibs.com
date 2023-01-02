@@ -20,7 +20,7 @@ const Main = styled.div`
     display: flex;
     justify-content: center;
     align-items:center;
-    padding: ${dim.padding};
+    padding: ${+dim.padding.substring(0,dim.padding.length - 2) + 15 + "px"};
 `;
 
 const Frame = styled.div`
