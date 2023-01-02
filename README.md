@@ -12,7 +12,6 @@ This is a personal website which I use to show of stuff that ive done in a funwa
     used to start the program and run it on localhost:3000
 
 # TODO
-* fix link in projects
 * reduce projects
 * reduce skills
 * update resume to be the one on cpanel

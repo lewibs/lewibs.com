@@ -14,7 +14,7 @@ const PageHeight = 250;
 const ButtonHeight = 25;
 const animationDist = window.innerWidth;
 const imgAnimation = "0.6s 1 ease-in forwards";
-const aboutAnimation = "0.2s 1 forwards";
+const aboutAnimation = "0.25s 1 forwards";
 
 const Main = styled.div`
     background: ${colors.primary};
@@ -65,7 +65,6 @@ const About = styled.div`
 const More = styled.div`
     cursor: pointer;
     color: ${colors.tertiaryDark};
-
 `;
 
 const ProjectTitle = styled.div`
@@ -76,6 +75,7 @@ const ProjectTitle = styled.div`
 
 const ImgC = styled.div`
     position: absolute;
+    pointer-events: none;
 `;
 
 const Img = styled.img`
@@ -193,7 +193,7 @@ function Project({title, image, info, link, last, id}) {
                             <ProjectTitle>{title}</ProjectTitle>
                             {info}
                             <More 
-                                onClick={()=>window.location.href = link}
+                                onClick={()=>{console.log(link);window.location.href = link}}
                             >
                                 click for more &#xbb;
                             </More>
