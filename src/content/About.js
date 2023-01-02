@@ -89,7 +89,7 @@ function gotoResume() {
     window.location.href = meta.about.resume;
 }
 
-export const About = React.forwardRef(({}, ref) => {
+export const About = React.forwardRef((props, ref) => {
     const [about, setAbout] = useState();
 
     useEffect(()=>{
