@@ -28,7 +28,19 @@ const Quote = styled.div`
 
 const Info = styled.div`
     display: flex;
-    justify-content: space-between;
+
+    /*this is for the computer*/
+    @media (min-width: ${dim.phone}) {
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    /*this is for the phone*/
+    @media (max-width: ${dim.phone}) {
+        flex-direction: column;
+        gap: ${dim.padding};
+        padding-bottom: ${dim.padding};
+    }
 `;
 
 const InfoSegment = styled.div`
@@ -39,15 +51,31 @@ const InfoSegment = styled.div`
 `;
 
 const Left = styled(InfoSegment)`
-    text-align: left;
+    /*this is for the computer*/
+    @media (min-width: ${dim.phone}) {
+        text-align: left;
+    }
+
+    /*this is for the phone*/
+    @media (max-width: ${dim.phone}) {
+        text-align: center;
+    }
 `;
 
 //this will likely cause issues on minor alignment things
 const Right = styled(InfoSegment)`
-    text-align: right;
-    align-items: end;
-    position: relative;
-    top: 5px;
+    /*this is for the computer*/
+    @media (min-width: ${dim.phone}) {
+        text-align: right;
+        align-items: end;
+        position: relative;
+        top: 5px;
+    }
+
+    /*this is for the phone*/
+    @media (max-width: ${dim.phone}) {
+        text-align: center;
+    }
 `;
 
 const Name = styled.div`
@@ -60,6 +88,11 @@ const Media = styled.div`
     display: flex;
     flex-direction: row;
     gap: 5px;
+
+    /*this is for the phone*/
+    @media (max-width: ${dim.phone}) {
+        justify-content: center;
+    }
 `;
 
 const ContactField = styled.div`
@@ -138,8 +171,8 @@ export const Contact = React.forwardRef(({}, ref) => {
                         </Media>
                     </Left>
                     <Right>
-                        <ContactField>{phone} <NoPhone><Icon type={"FiPhone"} size={iconSize} /></NoPhone></ContactField>
-                        <ContactField>{email} <NoPhone><Icon type={"FiAtSign"} size={iconSize} /></NoPhone></ContactField>
+                        <ContactField>{phone}<NoPhone><Icon type={"FiPhone"} size={iconSize} /></NoPhone></ContactField>
+                        <ContactField>{email}<NoPhone><Icon type={"FiAtSign"} size={iconSize} /></NoPhone></ContactField>
                     </Right>
                 </Info>
                 <Final>

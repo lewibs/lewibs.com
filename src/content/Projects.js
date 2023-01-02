@@ -13,8 +13,8 @@ import {z} from "../style/z-index";
 const PageHeight = 250;
 const ButtonHeight = 25;
 const animationDist = window.innerWidth;
-const imgAnimation = "0.8s 1 ease-in forwards";
-const aboutAnimation = "0.3s 1 forwards";
+const imgAnimation = "0.6s 1 ease-in forwards";
+const aboutAnimation = "0.2s 1 forwards";
 
 const Main = styled.div`
     background: ${colors.primary};
