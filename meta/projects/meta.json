@@ -15,7 +15,7 @@
         "image" : "https://raw.githubusercontent.com/lewibs/lewibs.com/main/meta/projects/images/duckscript.png",
         "title" : "ducktyper",
         "link" : "https://github.com/lewibs/ducktyper",
-        "info" : "This is a project that allows type checking in javascript without needing to add typscript."
+        "info" : "This is a project is a fantastic replacement for object-validation and yup. Its goal is to provide a library for creating custom validation objects and functions with ease while maintaining a small footprint. It provides support for js and ts along with functional and oop validation along with front and back end integration reducing the overall size of software which uses ducktyper"
     },
     {
         "image" : "https://raw.githubusercontent.com/lewibs/lewibs.com/main/meta/projects/images/blackeye.png",
