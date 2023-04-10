@@ -1,5 +1,11 @@
 [
     {
+        "image": "https://raw.githubusercontent.com/lewibs/lewibs.com/main/meta/projects/images/wakescrape.jpg",
+        "title": "wakescrape",
+        "link": "https://github.com/lewibs/wakescrape",
+        "info": "My first webscraper. It pulls all of the housing data off of wake county realestate and saves them to local json files for data analysis."
+    },
+    {
         "image": "https://raw.githubusercontent.com/lewibs/lewibs.com/main/meta/projects/images/AlienInvasion.PNG",
         "title": "Aliens!",
         "link": "http://alien.lewibs.com/",
@@ -9,13 +15,13 @@
         "image": "https://raw.githubusercontent.com/lewibs/guarded-components/main/images/guard.PNG",
         "title": "guarded-components",
         "link": "https://www.npmjs.com/package/guarded-components",
-        "info": "This is used to protect pages or components such as buttons based on the user's state. It seems that this is a common problem in industry and there are no packages that I am aware of which work for most jsx compatible frameworks with any authorization strategies. This package allows the user to take control of this problem by simply defining strategies based on contracts which they determine."
+        "info": "This is used to protect pages or components such as buttons based on the user's state. It seems that this is a common problem in industry. This will work for most jsx compatible frameworks with any authorization strategies. This package allows the user to define strategies based on contracts that protect components."
     },
     {
         "image" : "https://raw.githubusercontent.com/lewibs/lewibs.com/main/meta/projects/images/duckscript.png",
         "title" : "ducktyper",
         "link" : "https://github.com/lewibs/ducktyper",
-        "info" : "This is a project is a fantastic replacement for object-validation and yup. Its goal is to provide a library for creating custom validation objects and functions with ease while maintaining a small footprint. It provides support for js and ts along with functional and oop validation along with front and back end integration reducing the overall size of software which uses ducktyper"
+        "info" : "This is a project is a fantastic replacement for object-validation and yup. Its goal is to provide a library for creating custom validation objects and functions with ease while maintaining a small footprint for front and backend validation to reduce repeated code."
     },
     {
         "image" : "https://raw.githubusercontent.com/lewibs/lewibs.com/main/meta/projects/images/blackeye.png",
