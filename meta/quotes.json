@@ -73,10 +73,10 @@
     }, 
     {
         "quote": "Objects are poor man's closures.",
-        "author": "unknown",
+        "author": "unknown"
     },
     {
         "quote": "Closures are poor man's objects.",
-        "author": "unknown",
-    },  
+        "author": "unknown"
+    }
 ]
