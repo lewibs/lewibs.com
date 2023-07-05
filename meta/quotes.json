@@ -70,5 +70,13 @@
     {
         "quote": "Find what you love and let it kill you.",
         "author": "charles bukowski"
-    }
+    }, 
+    {
+        "quote": "Objects are poor man's closures.",
+        "author": "unknown",
+    },
+    {
+        "quote": "Closures are poor man's objects.",
+        "author": "unknown",
+    },  
 ]
