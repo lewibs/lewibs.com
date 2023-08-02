@@ -78,5 +78,9 @@
     {
         "quote": "Closures are poor man's objects.",
         "author": "unknown"
+    },
+    {
+        "quote": "Whenever possible, steal code.",
+        "author": "Tom Duff"
     }
 ]
