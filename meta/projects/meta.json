@@ -82,5 +82,11 @@
         "title" : "Wisdom Dog",
         "link" : "http://wisdomdog.lewibs.com/",
         "info" : "I made the wisdom dog to experiment with interactive websites and see how babble works. It was my first website using the basics."
+    },
+    {
+        "image" : "",
+        "title" : "Functional Array",
+        "link" : "https://github.com/lewibs/FunctionalArray",
+        "info" : "Arrays are a poor mans closure"
     }
 ]
