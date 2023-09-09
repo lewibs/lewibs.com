@@ -84,7 +84,7 @@
         "info" : "I made the wisdom dog to experiment with interactive websites and see how babble works. It was my first website using the basics."
     },
     {
-        "image" : "",
+        "image" : "https://i0.wp.com/talesoftimesforgotten.com/wp-content/uploads/2021/11/Spartan-shields-1.jpg?fit=698%2C708&ssl=1",
         "title" : "Functional Array",
         "link" : "https://github.com/lewibs/FunctionalArray",
         "info" : "Arrays are a poor mans closure"
