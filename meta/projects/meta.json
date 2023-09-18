@@ -88,5 +88,11 @@
         "title" : "Functional Array",
         "link" : "https://github.com/lewibs/FunctionalArray",
         "info" : "Arrays are a poor mans closure"
+    }, 
+    {
+        "image" : "https://static.vecteezy.com/system/resources/previews/019/006/277/original/money-cash-icon-png.png",
+        "title" : "Quick Casher",
+        "info" : "This utility allows you to convert a function into a caching function, enhancing performance by storing and retrieving its output based on specified options",
+        "link" : "https://github.com/lewibs/lewibs-cache"
     }
 ]
