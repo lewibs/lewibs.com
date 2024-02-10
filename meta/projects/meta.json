@@ -1,11 +1,5 @@
 [
     {
-        "image": "https://d2v9ipibika81v.cloudfront.net/uploads/sites/281/checklist.png",
-        "title": "checklists",
-        "link": "https://github.com/lewibs/checklists",
-        "info": "This is to help software developers write better software and have better habits when working."
-    },
-    {
         "image": "https://raw.githubusercontent.com/lewibs/lewibs.com/main/meta/projects/images/wakescrape.jpg",
         "title": "wakescrape",
         "link": "https://github.com/lewibs/wakescrape",
