@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.5fb054a7.css",
-    "main.js": "/react-gh-pages/static/js/main.8eff8d0f.js",
-    "static/media/bold.blob": "/react-gh-pages/static/media/bold.65e5a908f07c29fdb373.blob",
-    "index.html": "/react-gh-pages/index.html",
-    "main.5fb054a7.css.map": "/react-gh-pages/static/css/main.5fb054a7.css.map",
-    "main.8eff8d0f.js.map": "/react-gh-pages/static/js/main.8eff8d0f.js.map"
+    "main.css": "/lewibs.github.io/static/css/main.5fb054a7.css",
+    "main.js": "/lewibs.github.io/static/js/main.79a9e7ad.js",
+    "static/media/bold.blob": "/lewibs.github.io/static/media/bold.65e5a908f07c29fdb373.blob",
+    "index.html": "/lewibs.github.io/index.html",
+    "main.5fb054a7.css.map": "/lewibs.github.io/static/css/main.5fb054a7.css.map",
+    "main.79a9e7ad.js.map": "/lewibs.github.io/static/js/main.79a9e7ad.js.map"
   },
   "entrypoints": [
     "static/css/main.5fb054a7.css",
-    "static/js/main.8eff8d0f.js"
+    "static/js/main.79a9e7ad.js"
   ]
 }
