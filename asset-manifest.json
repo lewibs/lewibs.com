@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/lewibs.github.io/static/css/main.5fb054a7.css",
-    "main.js": "/lewibs.github.io/static/js/main.79a9e7ad.js",
-    "static/media/bold.blob": "/lewibs.github.io/static/media/bold.65e5a908f07c29fdb373.blob",
-    "index.html": "/lewibs.github.io/index.html",
-    "main.5fb054a7.css.map": "/lewibs.github.io/static/css/main.5fb054a7.css.map",
-    "main.79a9e7ad.js.map": "/lewibs.github.io/static/js/main.79a9e7ad.js.map"
+    "main.css": "/lewibs.com/static/css/main.5fb054a7.css",
+    "main.js": "/lewibs.com/static/js/main.ecf73898.js",
+    "static/media/bold.blob": "/lewibs.com/static/media/bold.65e5a908f07c29fdb373.blob",
+    "index.html": "/lewibs.com/index.html",
+    "main.5fb054a7.css.map": "/lewibs.com/static/css/main.5fb054a7.css.map",
+    "main.ecf73898.js.map": "/lewibs.com/static/js/main.ecf73898.js.map"
   },
   "entrypoints": [
     "static/css/main.5fb054a7.css",
-    "static/js/main.79a9e7ad.js"
+    "static/js/main.ecf73898.js"
   ]
 }
