@@ -8,7 +8,7 @@
     {
         "image": "https://raw.githubusercontent.com/lewibs/lewibs.com/main/meta/projects/images/AlienInvasion.PNG",
         "title": "Aliens!",
-        "link": "http://alien.lewibs.com/",
+        "link": "https://lewibs.github.io/AlienInvasionExperience/",
         "info": "Oh no! Aliens are invading earth! Thankfully, you're on the rocket ship that is escaping. Sit back and enjoy the experience. This was made for the purpose of making a well defined threejs engine that could be copied for threejs projects"
     },
     {
@@ -44,7 +44,7 @@
     {
         "image" : "https://raw.githubusercontent.com/lewibs/lewibs.com/main/meta/projects/images/wackamon.PNG",
         "title" : "Wackamon",
-        "link" : "http://wackamon.lewibs.com/",
+        "link" : "https://lewibs.github.io/wack_a_mon/",
         "info" : "Wack-A-Mon implements the use of a FSM. This is used to simplify the code and make the program smoother. Additionally, it implements ajax to include a highscore list."
     },
     {
@@ -62,19 +62,19 @@
     {
         "image" : "https://raw.githubusercontent.com/lewibs/lewibs.com/main/meta/projects/images/clueSheet.PNG",
         "title" : "Sheet-O-Matic",
-        "link" : "http://cluesheet.lewibs.com/",
+        "link" : "https://lewibs.github.io/CLUEsheet-o-matic/",
         "info" : "This game gives you an unfair advantage in CLUE as it looks back through past guesses and uses logic to determine who did the crime."
     },
     {
         "image" : "https://raw.githubusercontent.com/lewibs/lewibs.com/main/meta/projects/images/movieNightEtc.PNG",
         "title" : "Movie Night Etc.",
-        "link" : "http://movienightetc.lewibs.com/",
+        "link" : "https://github.com/lewibs/MovieNightEtc/",
         "info" : "Movie Night Etc was part of an elaborate joke to make a blog. I taught myself PHP to make this website. This website is what introduced me to web development."
     },
     {
         "image" : "https://raw.githubusercontent.com/lewibs/lewibs.com/main/meta/projects/images/wisdomDog.PNG",
         "title" : "Wisdom Dog",
-        "link" : "http://wisdomdog.lewibs.com/",
+        "link" : "https://lewibs.github.io/wisdomDog/",
         "info" : "I made the wisdom dog to experiment with interactive websites and see how babble works. It was my first website using the basics."
     },
     {

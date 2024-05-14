@@ -1,7 +1,7 @@
 {
   "name": "lewibs3.0",
   "version": "0.1.0",
-  "homepage": "https://lewibs.github.io/lewibs.com",
+  "homepage": "http://lewibs.com",
   "private": false,
   "dependencies": {
     "@emotion/react": "^11.10.0",
