@@ -6,6 +6,12 @@
         "info": "My first webscraper. It pulls all of the housing data off of wake county realestate and saves them to local json files for data analysis."
     },
     {
+        "image": "https://raw.githubusercontent.com/lewibs/lewibs.com/main/meta/projects/images/6CARDGOLF.jpg",
+        "title": "6 Card Golf",
+        "link": "https://github.com/lewibs/6_card_golf_ai",
+        "info": "This is an AI agent which plays the game 6 card golf utilizes pytorch and Q-Learning."
+    },
+    {
         "image": "https://raw.githubusercontent.com/lewibs/lewibs.com/main/meta/projects/images/AlienInvasion.PNG",
         "title": "Aliens!",
         "link": "https://lewibs.github.io/AlienInvasionExperience/",
