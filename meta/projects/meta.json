@@ -1,5 +1,11 @@
 [
     {
+        "image": "https://github.com/ottery-app/global-data/blob/main/images/logos/Ottery_logo_head.png?raw=true",
+        "title": "Ottery",
+        "link": "https://github.com/ottery-app",
+        "info": "Ottery, was a daycare managment tool that was made by me, it facilitated security and communication between parents. It was used by a church and a school but had issues getting users. Note this is private since it is proprietary software."
+    }
+    {
         "image": "https://raw.githubusercontent.com/lewibs/lewibs.com/main/meta/projects/images/wakescrape.jpg",
         "title": "wakescrape",
         "link": "https://github.com/lewibs/wakescrape",
