@@ -1,4 +1,17 @@
 [
+    
+    {
+        "image": "https://cdn.zbaseglobal.com/saasbox/resources/png/Step1_-Upload-or-Input-Audio__10e4d8048a1f769e8b3f5b9551237fff.png",
+        "title": "Meeting minutes"
+        "link": "https://github.com/lewibs/meeting-minutes",
+        "info": "This is an obsidian plugin which records and summarizes meatings so that you can review what happened in the meeting later." 
+    },
+    {
+        "image": "https://cdn.blot.im/blog_c4a729f3205a44e5a9669523ddfb8b2e/_image_cache/846dfd39-16fb-4ef9-bdbd-466a35194438.jpg",
+        "title": "keyfile"
+        "link": "https://github.com/lewibs/keyfile",
+        "info": "Keyfile is a domain-specific language designed to simplify keyboard configuration by providing a clear, modifiable, and user-friendly syntax that transpiles to C++ and leverages QMK for binary compilation." 
+    },
     {
         "image": "https://raw.githubusercontent.com/lewibs/lewibs.com/main/meta/projects/images/Envision_Reality_Logo.png",
         "title": "Envision Reality",
