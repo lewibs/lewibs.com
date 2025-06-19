@@ -19,12 +19,12 @@ const Empty = styled.div`
 
 export const Home = React.forwardRef(({goto}, ref) => {
     return(
-        <>
-            <Empty ref={ref}/>
-            <More onClick={()=>{
-                goto.current.scrollIntoView();
-            }}/>
-            <Main><Me/></Main>
-        </>
+       <>
+          {ref && <Empty ref={ref} />}
+          {goto && (
+            <More onClick={() => goto.current.scrollIntoView()} />
+          )}
+          <Main><Me /></Main>
+       </>    
     );
 })
