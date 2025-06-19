@@ -1,4 +1,6 @@
 # this is lewibs.com
+NOTE this is used in tandem with vercel and obsidian digital garden. I have another repo for handling that. This is shown as an iframe in it and I am moving work over to that since it is easier to edit.
+
 This is a personal website which I use to show of stuff that ive done in a fun way that hopefully gives everyone who looks at it a marginally better day : )
 
 # scripts
